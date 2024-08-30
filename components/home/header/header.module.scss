@@ -2,12 +2,11 @@
 
 .container {
   max-width: $breakpoint-xl;
-  width: 100%;
+  // width: 100%;
   margin: 0 auto;
-  position: relative;
+  // position: relative;
 }
 .headers {
-  // width: 100%;
   margin: 0 130px;
   padding: 23px 0;
   height: 93px;
@@ -32,11 +31,11 @@
 }
 
 .nav_logo {
-  height: 101px;
-  width: 120px;
+  // height: 101px;
+  // width: 120px;
   position: relative;
 
-  @media (max-width: $breakpoint-md) {
+  @media (max-width: 1200px) {
     display: none;
   }
 }
@@ -46,25 +45,22 @@
   flex-direction: row;
   gap: 1.4rem;
   align-items: center;
-  @media (max-width: $breakpoint-md) {
+  @media (max-width: 1200px) {
     display: none;
   }
 }
 
 .menu {
   font-family: Poppins;
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 17px;
+  font-weight: 500;
   line-height: 33px;
   text-align: center;
   color: $primary-color;
 }
 
 .ticket_button {
-  //   width: Fixed (223.83px) px;
-  //   height: Fixed (55.9px) px;
-  top: 37px;
-  padding: 20px 21px 20px 21px;
+  padding: 12px 15px 12px 15px;
   border-radius: 9px;
   opacity: 0px;
   background-color: $button-color;
@@ -73,7 +69,7 @@
   color: $primary-color;
   border: none;
 
-  @media (max-width: $breakpoint-md) {
+  @media (max-width: 1200px) {
     display: none;
   }
 }
@@ -81,11 +77,11 @@
 .menu_icon {
   display: none;
 
-  @media (max-width: $breakpoint-md) {
+  @media (max-width: 1200px) {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    width: 100%;
+    // width: 100%;
   }
 }
 
@@ -109,7 +105,8 @@
   top: 0;
   right: 0;
   max-width: 300px;
-  width: 100%;
+  // width: 100%;
+  visibility: hidden;
 }
 .show_menu {
   transform: translateX(0);

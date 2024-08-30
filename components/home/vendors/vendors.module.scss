@@ -11,6 +11,8 @@
   background-size: cover;
   background-position: center;
   padding: 75px 0;
+  overflow: hidden;
+  z-index: -2;
 
   @media (max-width: $breakpoint-md) {
     padding: 42px 0;
@@ -212,4 +214,9 @@
   position: absolute;
   bottom: 0;
   right: -60px;
+  z-index: -1;
+
+  @media (max-width: $breakpoint-md) {
+    right: -20px;
+  }
 }

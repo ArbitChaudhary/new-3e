@@ -40,8 +40,9 @@ function Header() {
             <Image
               src={Logo}
               alt=""
-              width={120}
-              height={101}
+              width={70}
+              height={60}
+              // fill
               // layout="responsive"
               style={{ objectFit: "contain", position: "relative" }}
             />
