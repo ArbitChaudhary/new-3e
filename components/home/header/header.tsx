@@ -54,9 +54,11 @@ function Header() {
               </div>
             ))}
           </div>
-          <button type="button" className={styles.ticket_button}>
-            Book Your Ticket
-          </button>
+          <a href="http://ticketfam.com/" target="_blank">
+            <button type="button" className={styles.ticket_button}>
+              Book Your Ticket
+            </button>
+          </a>
         </div>
         <div className={styles.menu_icon}>
           <TbMenuDeep onClick={() => setOpenMenu(true)} />

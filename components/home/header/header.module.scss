@@ -68,6 +68,7 @@
   font-weight: 500;
   color: $primary-color;
   border: none;
+  cursor: pointer;
 
   @media (max-width: 1200px) {
     display: none;

@@ -56,10 +56,12 @@ const Hero = () => {
             <div className={styles.banner_address}>Manassas Fairgrounds</div>
             <div className={styles.banner_button}>
               <button className={styles.banner_ticket_button}>
-                <div className={styles.button_flex}>
-                  <span>Get Tickets</span>
-                  <Image src={circle} alt="Circle" height={40} width={40} />
-                </div>
+                <a href="http://ticketfam.com/" target="_blank">
+                  <div className={styles.button_flex}>
+                    <span>Get Tickets</span>
+                    <Image src={circle} alt="Circle" height={40} width={40} />
+                  </div>
+                </a>
               </button>
             </div>
           </div>

@@ -28,7 +28,11 @@ function KumariExhibition() {
           </div>
         </div>
         <div className={styles.button_container}>
-          <button>Book Your Ticket</button>
+          <button>
+            <a href="http://ticketfam.com/" target="_black">
+              Book Your Ticket
+            </a>
+          </button>
         </div>
       </div>
     </main>
