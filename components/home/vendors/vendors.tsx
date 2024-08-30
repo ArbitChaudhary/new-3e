@@ -11,6 +11,14 @@ function Vendors() {
           <div className={styles.head}>Support & Vendor</div>
           <div className={styles.vendor_grid}>
             <div className={styles.left}>
+              {/* <mapplic-map data-json="https://mapplic.com/getMapData?id=enYM9UEjC107fMcdVuI8">
+                <script
+                  type="text/javascript"
+                  id="mapplic-script"
+                  src="https://mapplic.com/mapplic.js"
+                ></script>
+              </mapplic-map> */}
+              {/* <MapplicMap /> */}
               {/* <mapplic.map data-json="https://mapplic.com/getMapData?id=FAuMxQrcODG1iqqSk0Eh">
                 <script
                   type="text/javascript"
@@ -18,7 +26,7 @@ function Vendors() {
                   src="https://mapplic.com/mapplic.js"
                 ></script>
               </mapplic.map> */}
-              {/* <div className={styles.vendor_image}>
+              <div className={styles.vendor_image}>
                 <Image
                   src={vendorImage}
                   alt="Vendor"
@@ -27,7 +35,7 @@ function Vendors() {
                   layout="responsive"
                   style={{ position: "relative", objectFit: "cover" }}
                 />
-              </div> */}
+              </div>
               <button className={styles.vendor_map_btn}> Vendor Map</button>
               <button className={styles.view_vendor_btn}>
                 Veiw All Vendors{" "}
