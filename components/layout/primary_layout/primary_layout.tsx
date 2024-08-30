@@ -7,9 +7,9 @@ interface IPrimaryLayout extends IChildrenProps {}
 const PrimaryLayout: React.FC<IPrimaryLayout> = ({ children }) => {
   return (
     <div className={styles.container}>
-      {/* <div className={styles.header}> */}
-      <Header />
-      {/* </div> */}
+      <div className={styles.header}>
+        <Header />
+      </div>
       <div className={styles.main}>{children}</div>
     </div>
   );
