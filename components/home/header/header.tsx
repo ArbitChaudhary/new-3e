@@ -14,24 +14,25 @@ interface IHeaderMenu {
 const headerMenu: IHeaderMenu[] = [
   {
     title: "Festival Highlights",
-    path: "",
+    path: "#festivals",
   },
   {
     title: "Tickents",
-    path: "",
+    path: "#ticket",
   },
   {
     title: "Vendors & Sponsors",
-    path: "",
+    path: "#vendor",
   },
   {
     title: "Venue Direction",
-    path: "",
+    path: "#event_location",
   },
 ];
 
 function Header() {
   const [openMenu, setOpenMenu] = useState<boolean>(false);
+
   return (
     <div className={styles.container}>
       <div className={styles.headers}>
@@ -50,7 +51,7 @@ function Header() {
           <div className={styles.header_menu}>
             {headerMenu?.map((item) => (
               <div className={styles.menu} key={item.title}>
-                {item.title}
+                <a href={item.path}>{item.title}</a>
               </div>
             ))}
           </div>

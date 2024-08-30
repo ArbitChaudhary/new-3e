@@ -24,7 +24,8 @@ function WhyAttend() {
   const handleClick = (index: number) => {
     setIsActive(index);
   };
-  console.log(isActive);
+
+  // console.log(isActive);
   return (
     <main>
       <div className={styles.container}>

@@ -1,0 +1,23 @@
+@import "styles/constants.scss";
+
+.container {
+  max-width: $breakpoint-xl;
+  width: 100%;
+  background-color: black;
+}
+
+.slide_text {
+  font-family: Poppins;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 60px;
+  text-align: center;
+  color: $primary-color;
+
+  @media (max-width: $breakpoint-md) {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+  }
+}

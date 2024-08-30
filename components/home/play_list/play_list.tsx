@@ -25,10 +25,10 @@ function PlayList() {
             </div>
             <div className={styles.top_texts}>
               <span>DT Fest 2024</span>
-              <span>Sift Through Sonic Waves</span>
+              <span>Listen to our official playlist</span>
             </div>
           </div>
-          <div className={styles.top_right}>
+          {/* <div className={styles.top_right}>
             <span>Playlist Settings</span>
             <div className={styles.playlist_setting}>
               <Image
@@ -39,7 +39,7 @@ function PlayList() {
                 style={{ position: "relative" }}
               />
             </div>
-          </div>
+          </div> */}
         </div>
         <div className={styles.bottom}>
           <MusicCard />

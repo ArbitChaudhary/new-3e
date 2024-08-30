@@ -1,143 +1,129 @@
-import Image from "next/image";
 import styles from "./sponsors.module.scss";
-import sponsor1 from "../../../public/sponsor-1.png";
-import sponsor2 from "../../../public/sponsor-2.png";
-import sponsor3 from "../../../public/sponsor-3.png";
-import sponsor4 from "../../../public/sponsor-4.png";
-import sponsor5 from "../../../public/sponsor-5.png";
-import sponsor6 from "../../../public/sponsor-6.png";
-import sponsor7 from "../../../public/sponsor-7.png";
-import sponsor8 from "../../../public/sponsor-8.png";
-import sponsor9 from "../../../public/sponsor-9.png";
-import sponsor10 from "../../../public/sponsor-10.png";
-import sponsor11 from "../../../public/sponsor-11.png";
+import vendor1 from "../../../public/sponsor-1.png";
+import vendor2 from "../../../public/sponsor-2.png";
+import vendor4 from "../../../public/sponsor-4.png";
+import vendor5 from "../../../public/sponsor-5.png";
+import Image from "next/image";
 
-function Sponsors() {
-  return (
-    <>
+import React, { Component } from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+// import "./App.css";
+
+class Sponsors extends Component {
+  render() {
+    const settings = {
+      dots: false,
+      arrows: false,
+      infinite: true,
+      slidesToShow: 7,
+      slidesToScroll: 1,
+      autoplay: true,
+      speed: 5000,
+      autoplaySpeed: 5000,
+      cssEase: "linear",
+      responsive: [
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 5,
+            slidesToScroll: 1,
+          },
+        },
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 6,
+            slidesToScroll: 1,
+          },
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 5,
+            slidesToScroll: 1,
+          },
+        },
+        {
+          breakpoint: 576,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+          },
+        },
+        {
+          breakpoint: 400,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+          },
+        },
+      ],
+    };
+    return (
       <div className={styles.container}>
         <div className={styles.sponsors}>
           <div className={styles.title}>Title Sponsor: NEST Reality</div>
           <div className={styles.sponsors_list}>
-            <div className={styles.sponsors_logo}>
-              <Image
-                src={sponsor1}
-                alt="Sponsor"
-                height={81}
-                width={120}
-                style={{ objectFit: "contain", position: "relative" }}
-                //  layout="responsive"
-              />
-            </div>
-            <div className={styles.sponsors_logo}>
-              <Image
-                src={sponsor2}
-                alt="Sponsor"
-                height={81}
-                width={120}
-                style={{ objectFit: "contain", position: "relative" }}
-                //  layout="responsive"
-              />
-            </div>
-          </div>
-          <div className={styles.sponsors_list}>
-            <div className={styles.sponsors_logo}>
-              <Image
-                src={sponsor3}
-                alt="Sponsor"
-                height={81}
-                width={120}
-                style={{ objectFit: "contain", position: "relative" }}
-                //  layout="responsive"
-              />
-            </div>
-            <div className={styles.sponsors_logo}>
-              <Image
-                src={sponsor4}
-                alt="Sponsor"
-                height={81}
-                width={120}
-                style={{ objectFit: "contain", position: "relative" }}
-                //  layout="responsive"
-              />
-            </div>
-            <div className={styles.sponsors_logo}>
-              <Image
-                src={sponsor5}
-                alt="Sponsor"
-                height={81}
-                width={120}
-                style={{ objectFit: "contain", position: "relative" }}
-                //  layout="responsive"
-              />
-            </div>
-            <div className={styles.sponsors_logo}>
-              <Image
-                src={sponsor6}
-                alt="Sponsor"
-                height={81}
-                width={120}
-                style={{ objectFit: "contain", position: "relative" }}
-                //  layout="responsive"
-              />
-            </div>
-          </div>
-          <div className={styles.sponsors_list}>
-            <div className={styles.sponsors_logo}>
-              <Image
-                src={sponsor7}
-                alt="Sponsor"
-                height={81}
-                width={120}
-                style={{ objectFit: "contain", position: "relative" }}
-                //  layout="responsive"
-              />
-            </div>
-            <div className={styles.sponsors_logo}>
-              <Image
-                src={sponsor8}
-                alt="Sponsor"
-                height={81}
-                width={120}
-                style={{ objectFit: "contain", position: "relative" }}
-                //  layout="responsive"
-              />
-            </div>
-            <div className={styles.sponsors_logo}>
-              <Image
-                src={sponsor9}
-                alt="Sponsor"
-                height={81}
-                width={120}
-                style={{ objectFit: "contain", position: "relative" }}
-                //  layout="responsive"
-              />
-            </div>
-            <div className={styles.sponsors_logo}>
-              <Image
-                src={sponsor10}
-                alt="Sponsor"
-                height={81}
-                width={120}
-                style={{ objectFit: "contain", position: "relative" }}
-                //  layout="responsive"
-              />
-            </div>
-            <div className={styles.sponsors_logo}>
-              <Image
-                src={sponsor11}
-                alt="Sponsor"
-                height={81}
-                width={120}
-                style={{ objectFit: "contain", position: "relative" }}
-                //  layout="responsive"
-              />
-            </div>
+            {/* <h2>Auto Play</h2>{" "} */}
+            <Slider {...settings}>
+              {" "}
+              <div className={styles.vendor_logo}>
+                <Image
+                  src={vendor1}
+                  alt="Vendor Logo"
+                  height={70}
+                  style={{ objectFit: "contain", position: "relative" }}
+                />
+              </div>
+              <div className={styles.vendor_logo}>
+                <Image
+                  src={vendor2}
+                  alt="Vendor Logo"
+                  height={70}
+                  style={{ objectFit: "contain", position: "relative" }}
+                />
+              </div>
+              <div className={styles.vendor_logo}>
+                <Image
+                  src={vendor2}
+                  alt="Vendor Logo"
+                  height={70}
+                  style={{ objectFit: "contain", position: "relative" }}
+                />
+              </div>
+              <div className={styles.vendor_logo}>
+                <Image
+                  src={vendor4}
+                  alt="Vendor Logo"
+                  height={70}
+                  style={{ objectFit: "contain", position: "relative" }}
+                />
+              </div>
+              <div className={styles.vendor_logo}>
+                <Image
+                  src={vendor5}
+                  alt="Vendor Logo"
+                  height={70}
+                  style={{ objectFit: "contain", position: "relative" }}
+                />
+              </div>
+              <div className={styles.vendor_logo}>
+                <Image
+                  src={vendor1}
+                  alt="Vendor Logo"
+                  height={70}
+                  style={{ objectFit: "contain", position: "relative" }}
+                />
+              </div>{" "}
+            </Slider>{" "}
           </div>
         </div>
+        {/* </div> */}
       </div>
-    </>
-  );
+    );
+  }
 }
 
 export default Sponsors;

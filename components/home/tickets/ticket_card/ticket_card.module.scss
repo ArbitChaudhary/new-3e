@@ -16,7 +16,7 @@
 .box_flex {
   position: absolute;
   // width: 100%;
-  // height: 100%;
+  height: 100%;
   top: 0;
   left: 0;
   display: flex;
@@ -128,6 +128,8 @@
   color: $primary-color;
   background-color: black;
   cursor: pointer;
+  z-index: 2;
+  position: relative;
 
   @media (max-width: $breakpoint-md) {
     padding: 16px 40px;

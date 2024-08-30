@@ -39,6 +39,10 @@
 .celebration_image {
   // max-width: 375px;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 .celebration_content {
@@ -90,4 +94,11 @@
   position: absolute;
   bottom: 0;
   right: 0;
+}
+
+.container_ani {
+  max-width: 300px;
+  width: 100%;
+  max-height: 800px;
+  height: 100%;
 }

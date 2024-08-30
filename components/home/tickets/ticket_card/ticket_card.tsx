@@ -30,7 +30,9 @@ function TicketCard({ raffle, offer }: ITicketCard) {
             <div>Price</div>
             <div>$15</div>
           </div>
-          <button className={styles.buy_btn}>Buy Now</button>
+          <a href="http://ticketfam.com/" target="_blank">
+            <button className={styles.buy_btn}> Buy Now</button>
+          </a>
         </div>
       </div>
     </>

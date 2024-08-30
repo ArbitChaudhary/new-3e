@@ -1,13 +1,12 @@
 import TicketCard from "./ticket_card/ticket_card";
 import styles from "./tickets.module.scss";
 // import "@fortawesome/fontawesome-svg-core/styles.css";
-import '@fortawesome/fontawesome-free/css/all.min.css';
-
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 function Tickets() {
   return (
     <>
-      <div className={styles.container}>
+      <div className={styles.container} id="ticket">
         {/* solar system */}
         {/* <div className={styles.description}>
           <h1 >Solar System</h1>
