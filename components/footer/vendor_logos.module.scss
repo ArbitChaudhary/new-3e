@@ -1,0 +1,53 @@
+@import "styles/constants.scss";
+
+.container {
+  max-width: $breakpoint-xl;
+  margin: 0 auto;
+  background: url("../../public/play-list-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 55px 0;
+  @media (max-width: $breakpoint-md) {
+    padding: 35px 0;
+  }
+}
+
+.vendor_logos_box {
+  margin: 0 130px;
+
+  @media (max-width: $breakpoint-md) {
+    margin: 0 35px;
+  }
+}
+
+.header {
+  font-family: Poppins;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 60px;
+  text-align: center;
+  color: $primary-color;
+  @media (max-width: $breakpoint-md) {
+    font-size: 28px;
+    line-height: 42px;
+  }
+}
+
+.vendor_logo_list {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 15px;
+
+  @media (max-width: $breakpoint-md) {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+  }
+}
+
+.vendor_logo {
+  width: 100%;
+  position: relative;
+  height: 50px;
+  margin-top: 20px;
+}

@@ -1,0 +1,159 @@
+@import "styles/constants.scss";
+
+.container {
+  max-width: $breakpoint-xl;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+.headers {
+  // width: 100%;
+  margin: 0 130px;
+  padding: 23px 0;
+  height: 93px;
+  background-color: transparent;
+
+  @media (max-width: $breakpoint-md) {
+    margin: 0 35px;
+  }
+}
+
+.header_items {
+  width: 100%;
+  display: flex;
+  // flex-direction: row;
+  // justify-content: space-between;
+  align-items: center;
+  gap: 35px;
+
+  @media (max-width: $breakpoint-md) {
+    display: none;
+  }
+}
+
+.nav_logo {
+  height: 101px;
+  width: 120px;
+  position: relative;
+
+  @media (max-width: $breakpoint-md) {
+    display: none;
+  }
+}
+
+.header_menu {
+  display: flex;
+  flex-direction: row;
+  gap: 1.4rem;
+  align-items: center;
+  @media (max-width: $breakpoint-md) {
+    display: none;
+  }
+}
+
+.menu {
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 33px;
+  text-align: center;
+  color: $primary-color;
+}
+
+.ticket_button {
+  //   width: Fixed (223.83px) px;
+  //   height: Fixed (55.9px) px;
+  top: 37px;
+  padding: 20px 21px 20px 21px;
+  border-radius: 9px;
+  opacity: 0px;
+  background-color: $button-color;
+  font-size: 18px;
+  font-weight: 500;
+  color: $primary-color;
+  border: none;
+
+  @media (max-width: $breakpoint-md) {
+    display: none;
+  }
+}
+
+.menu_icon {
+  display: none;
+
+  @media (max-width: $breakpoint-md) {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+.menu_icon > svg {
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  color: black;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  align-self: flex-end;
+}
+
+.hide_menu {
+  transform: translateX(100%);
+  transition: ease all 300ms;
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-width: 300px;
+  width: 100%;
+}
+.show_menu {
+  transform: translateX(0);
+  transition: ease all 300ms;
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-width: 300px;
+  width: 100%;
+}
+
+.mobile_nav {
+  max-width: 300px;
+  // width: 100%;
+  background-color: black;
+  color: white;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.top {
+  display: flex;
+  // width: 100%;
+  justify-content: end;
+  align-items: center;
+  padding: 12px;
+}
+
+.top > svg {
+  width: 20px;
+  height: 20px;
+  color: $button-color;
+}
+
+.nav_item_flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 20px 20px;
+  border-bottom: 1px solid white;
+}
+
+.menu_item {
+  font-weight: 500;
+  font-size: 16px;
+}

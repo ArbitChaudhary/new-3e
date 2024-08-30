@@ -1,0 +1,55 @@
+@import "styles/constants.scss";
+
+.container {
+  background: url("./../../../public/bg-image.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: $breakpoint-xl;
+  width: 100%;
+  padding: 105px 0;
+
+  @media (max-width: $breakpoint-md) {
+    padding: 42px 0;
+  }
+  // height: 601px;
+}
+
+.artists_lineup {
+  margin: 0 164px;
+  @media (max-width: $breakpoint-md) {
+    margin: 0 35px;
+  }
+}
+
+.header {
+  font-family: Poppins;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 72px;
+  text-align: center;
+  // margin-top: 80px;
+
+  @media (max-width: $breakpoint-md) {
+    font-size: 28px;
+    // margin-top: 42px;
+    line-height: 42px;
+  }
+}
+
+.artist_flex {
+  margin-top: 75px;
+  display: grid;
+  flex-direction: row;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 15px;
+
+  @media (max-width: $breakpoint-md) {
+    margin-top: 42px;
+    grid-template-columns: repeat(3, 1fr);
+
+    @media (max-width: $breakpoint-sm) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}

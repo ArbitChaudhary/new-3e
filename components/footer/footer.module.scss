@@ -1,0 +1,144 @@
+@import "styles/constants.scss";
+
+.container {
+  max-width: $breakpoint-xl;
+  width: 100%;
+  margin: 0 auto;
+  background-color: black;
+}
+
+.footer {
+  padding: 50px 0 20px 0;
+  margin: 0 130px;
+  @media (max-width: $breakpoint-md) {
+    margin: 0 35px;
+  }
+}
+
+.footer_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+  @media (max-width: $breakpoint-md) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.footer_left {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+
+  @media (max-width: $breakpoint-md) {
+    display: none;
+  }
+}
+
+.contact_us {
+  font-family: Poppins;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 48px;
+  text-align: center;
+  color: $primary-color;
+}
+
+.email_title {
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: left;
+  color: $primary-color;
+  margin-top: 20px;
+}
+
+.email {
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+  text-align: left;
+  color: $primary-color;
+}
+
+.footer_right {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+
+  @media (max-width: $breakpoint-md) {
+    justify-content: center;
+    align-items: center;
+  }
+}
+.footer_logo {
+  height: 151px;
+  width: 182px;
+  position: relative;
+}
+
+.social_media {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-top: 50px;
+
+  @media (max-width: $breakpoint-md) {
+    margin-top: 25px;
+  }
+}
+
+.social_media svg {
+  padding: 10px;
+  background-color: white;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  @media (max-width: $breakpoint-md) {
+    height: 20px;
+    width: 20px;
+    padding: 5px;
+  }
+}
+
+.powered_by_box {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 53px;
+
+  @media (max-width: $breakpoint-md) {
+    margin-top: 26px;
+  }
+}
+
+.powered_by {
+  position: relative;
+  color: $primary-color;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29.26px;
+  text-align: left;
+
+  @media (max-width: $breakpoint-md) {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+
+.powered_by_logo {
+  width: 77px;
+  height: 31px;
+  position: relative;
+
+  @media (max-width: $breakpoint-md) {
+    width: 39px;
+    height: 15px;
+  }
+}

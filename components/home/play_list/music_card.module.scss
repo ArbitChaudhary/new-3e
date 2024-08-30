@@ -1,0 +1,63 @@
+@import "styles/constants.scss";
+
+.music_card_container {
+  max-width: 571px;
+  height: 139px;
+  width: 100%;
+  border-radius: 20px;
+  background-color: #f2f2f220;
+  overflow: hidden;
+}
+
+.music_image {
+  height: 139px;
+  width: 158px;
+  position: relative;
+}
+
+.music_card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 35px;
+}
+
+.music_card_left {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+}
+
+.music_details {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.album_name {
+  font-family: Poppins;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 60px;
+  text-align: left;
+  color: $primary-color;
+}
+
+.sub_text {
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+  color: $primary-color;
+}
+
+.music_card_right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-right: 20px;
+}

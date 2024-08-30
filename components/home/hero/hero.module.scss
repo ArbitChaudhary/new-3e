@@ -1,0 +1,129 @@
+@import "styles/constants.scss";
+
+.container {
+  max-width: $breakpoint-xl;
+  width: 100%;
+  // height: 902px;
+  // height: 100%;
+  margin: 0 auto;
+  background: url("../../../public//Banner.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero {
+  margin: 0 130px;
+  padding-bottom: 100px;
+
+  @media (max-width: $breakpoint-md) {
+    margin: 0 35px;
+    padding-bottom: 35px;
+  }
+}
+
+.kite_box {
+  width: 100%;
+  height: 150px;
+  position: relative;
+  margin-top: 150px;
+
+  @media (max-width: $breakpoint-md) {
+    margin-top: 100px;
+  }
+}
+
+.kite1 {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+}
+.kite2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  // left: 50%;
+  // transform: translate(-50%);
+}
+.kite3 {
+  position: absolute;
+  top: 25%;
+  right: 0;
+  // left: 50%;
+  // transform: translate(-50%);
+}
+.banner_logo {
+  margin-top: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: $breakpoint-md) {
+    display: none;
+  }
+}
+
+.banner_join_date {
+  font-family: Poppins;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 60px;
+  text-align: center;
+  margin-top: 200px;
+  color: $primary-color;
+
+  @media (max-width: $breakpoint-md) {
+    font-size: 24px;
+    line-height: 36px;
+    margin-top: 120px;
+  }
+}
+
+.banner_address {
+  font-family: Poppins;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 48px;
+  text-align: center;
+  color: $button-color;
+
+  @media (max-width: $breakpoint-md) {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+
+.banner_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 28px;
+}
+
+.banner_ticket_button {
+  width: 355px px;
+  height: 80px px;
+  top: 491px;
+  left: 543px;
+  padding: 19px 47px 19px 47px;
+  gap: 10px;
+  border-radius: 9px;
+  border: none;
+  opacity: 0px;
+  background-color: $button-color;
+  color: $primary-color;
+}
+
+.button_flex {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  justify-content: center;
+  align-items: center;
+}
+
+.button_flex > span {
+  font-size: 28px;
+  font-weight: 500;
+}

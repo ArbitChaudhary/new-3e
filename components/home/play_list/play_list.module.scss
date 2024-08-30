@@ -1,0 +1,197 @@
+@import "styles/constants.scss";
+
+.container {
+  background: url("../../../public/play-list-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.play_list_container {
+  margin: 0 130px;
+  position: relative;
+
+  @media (max-width: $breakpoint-md) {
+    margin: 0 35px;
+  }
+}
+
+.top {
+  position: relative;
+  margin-top: 65px;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (max-width: $breakpoint-md) {
+    margin-top: 37px;
+  }
+}
+
+.logo {
+  height: 102px;
+  width: 102px;
+  position: relative;
+}
+
+.top_left {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: center;
+}
+
+.top_texts {
+  display: flex;
+  flex-direction: column;
+}
+
+.top_texts :first-child {
+  font-family: Poppins;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 54px;
+  text-align: left;
+  color: $primary-color;
+
+  @media (max-width: $breakpoint-md) {
+    font-size: 24px;
+  }
+}
+
+.top_texts :last-child {
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+  color: $primary-color;
+
+  @media (max-width: $breakpoint-md) {
+    font-size: 16px;
+  }
+}
+
+.top_right {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+}
+
+.top_right > span {
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  text-align: left;
+  color: $primary-color;
+
+  @media (max-width: $breakpoint-md) {
+    display: none;
+  }
+}
+
+.playlist_setting {
+  width: 45px;
+  height: 45px;
+  position: relative;
+  display: inline-blockI;
+}
+
+.bottom {
+  margin-top: 50px;
+  display: grid;
+  //   grid-template-columns: 1fr 1fr;
+  gap: 83px;
+  margin-bottom: 50px;
+}
+
+.bottom_left {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+}
+
+.update_playlist {
+  gap: 0px;
+  border-radius: 20px;
+  opacity: 0px;
+  padding: 30px;
+  font-size: 28px;
+  font-weight: 600;
+  border: none;
+  background-color: #1cd762;
+  color: $primary-color;
+}
+.bottom_left_spotify {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-content: center;
+}
+
+.button_flex {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2.5rem;
+  align-items: center;
+  background-color: #f2f2f220;
+  border-radius: 20px;
+  padding: 18px;
+  border: none;
+}
+
+.more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #f2f2f220;
+  border-radius: 20px;
+}
+
+.audio_journey {
+  font-family: Poppins;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 54px;
+  text-align: left;
+  color: $primary-color;
+}
+
+.music_list {
+  margin-top: 61px;
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  align-items: flex-start;
+  justify-content: start;
+  max-height: 661px;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.scroll {
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+}
+.scroll::-webkit-scrollbar {
+  width: 5px;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+  background-color: #1cd762; /* Color of the scrollbar handle */
+  border-radius: 6px;
+}
+
+.scroll::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Background color of the scrollbar track */
+  border-radius: 6px; /* Rounded corners of the track */
+}

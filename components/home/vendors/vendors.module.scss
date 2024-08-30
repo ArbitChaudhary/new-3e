@@ -1,0 +1,215 @@
+@import "styles/constants.scss";
+
+.container {
+  max-width: $breakpoint-xl;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  background: url("../../../public//bg-image.png");
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 75px 0;
+
+  @media (max-width: $breakpoint-md) {
+    padding: 42px 0;
+  }
+}
+
+.vendor {
+  margin: 0 130px;
+  position: relative;
+
+  @media (max-width: $breakpoint-md) {
+    margin: 0 35px;
+  }
+}
+
+.head {
+  font-family: Poppins;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 72px;
+  text-align: center;
+
+  @media (max-width: $breakpoint-md) {
+    font-size: 28px;
+  }
+}
+.vendor_grid {
+  margin-top: 79px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 74px;
+
+  @media (max-width: $breakpoint-md) {
+    grid-template-columns: 1fr;
+    margin-top: 24px;
+  }
+}
+
+.left {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+  gap: 24px;
+
+  @media (max-width: $breakpoint-md) {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.vendor_image {
+  width: 100%;
+  height: fit-content;
+  border-radius: 16px;
+  position: relative;
+}
+
+.vendor_map_btn {
+  height: 80px;
+  max-width: 350px;
+  width: 100%;
+  //   width: fit-content;
+  //   padding: 24px 36px 24px 36px;
+  gap: 10px;
+  border-radius: 9px;
+  opacity: 0px;
+  border: none;
+  background-color: $button-color;
+  font-family: Poppins;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 48px;
+  text-align: center;
+  color: $primary-color;
+  @media (max-width: $breakpoint-md) {
+    font-size: 20px;
+    height: 70px;
+  }
+}
+
+.view_vendor_btn {
+  height: 80px;
+  max-width: 350px;
+  width: 100%;
+  //   width: fit-content;
+  //   padding: 24px 36px 24px 36px;
+  gap: 10px;
+  border-radius: 9px;
+  opacity: 0px;
+  border: 2px solid black;
+  background-color: transparent;
+  font-family: Poppins;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 48px;
+  text-align: center;
+  //   color: $primary-color;
+  @media (max-width: $breakpoint-md) {
+    font-size: 20px;
+    height: 70px;
+  }
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.description {
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+  text-align: left;
+  color: $text-black;
+
+  @media (max-width: $breakpoint-md) {
+    font-size: 20px;
+  }
+}
+
+.performers {
+  max-width: 390px;
+  width: 100%;
+  height: 69px;
+  top: 6203px;
+  left: 784px;
+  // padding: 24px 33px 24px 33px;
+  gap: 10px;
+  border-radius: 9px;
+  opacity: 0px;
+  background-color: $button-color;
+  color: $primary-color;
+  font-family: Poppins;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 42px;
+  text-align: center;
+  border: none;
+
+  @media (max-width: $breakpoint-md) {
+    font-size: 20px;
+    height: 70px;
+  }
+}
+.vendor_app {
+  max-width: 390px;
+  width: 100%;
+  height: 69px;
+  top: 6203px;
+  left: 784px;
+  // padding: 24px 33px 24px 33px;
+  gap: 10px;
+  border-radius: 9px;
+  opacity: 0px;
+  background-color: transparent;
+  //   color: ;
+  font-family: Poppins;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 42px;
+  text-align: center;
+  border: 2px solid black;
+
+  @media (max-width: $breakpoint-md) {
+    font-size: 20px;
+    height: 70px;
+  }
+}
+
+.volunteer {
+  max-width: 390px;
+  width: 100%;
+  height: 69px;
+  top: 6203px;
+  left: 784px;
+  // padding: 24px 33px 24px 33px;
+  gap: 10px;
+  border-radius: 9px;
+  opacity: 0px;
+  background-color: transparent;
+  color: $button-color;
+  font-family: Poppins;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 42px;
+  text-align: center;
+  border: 2px solid $button-color;
+
+  @media (max-width: $breakpoint-md) {
+    font-size: 20px;
+    height: 70px;
+  }
+}
+
+.cultural_pot {
+  position: absolute;
+  bottom: 0;
+  right: -60px;
+}
