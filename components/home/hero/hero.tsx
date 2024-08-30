@@ -51,38 +51,12 @@ const Hero = () => {
               zIndex: 10,
             }}
           >
-            <motion.div
-              initial={{ x: "-100vw", opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              exit={{ x: "100vw", opacity: 0 }}
-              transition={{ duration: 0.5 }}
-              style={{
-                position: "absolute",
-                top: "50%",
-                left: "10%",
-                transform: "translateY(-50%)",
-              }}
+            <div
             >
-              {/* <h1>Victory!</h1> */}
-            </motion.div>
-            {isCelebrating && (
-              <ConfettiEffect
-                width={windowDimensions.width}
-                height={windowDimensions.height}
-                run={isCelebrating}
-              />
-            )}
+            </div>
           </div>
           <div className={styles.banner}>
-            {/* <div className={styles.banner_logo}>
-              <Image
-                src={logo}
-                alt="Banner logo"
-                height={151}
-                width={170}
-                style={{ objectFit: "contain" }}
-              />
-            </div> */}
+            
             <div className={styles.kite_box}>
               <div className={styles.kite1}>
                 <Image
