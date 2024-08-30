@@ -8,6 +8,7 @@
   max-width: $breakpoint-xl;
   width: 100%;
   padding: 105px 0;
+  z-index: -2;
 
   @media (max-width: $breakpoint-md) {
     padding: 42px 0;
@@ -15,8 +16,15 @@
   // height: 601px;
 }
 
+.bg_image {
+  position: absolute;
+  top: 0;
+  left: -100px;
+  z-index: -1;
+}
 .artists_lineup {
   margin: 0 164px;
+  position: relative;
   @media (max-width: $breakpoint-md) {
     margin: 0 35px;
   }
