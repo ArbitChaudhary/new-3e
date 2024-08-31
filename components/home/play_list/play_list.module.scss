@@ -9,11 +9,13 @@
 }
 
 .play_list_container {
-  margin: 0 130px;
+  max-width: $breakpoint-xl;
+  margin: 0 auto;
+  padding: 0 130px;
   position: relative;
 
   @media (max-width: $breakpoint-md) {
-    margin: 0 35px;
+    padding: 0 35px;
   }
 }
 

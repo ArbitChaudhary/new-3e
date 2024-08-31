@@ -1,13 +1,13 @@
 @import "styles/constants.scss";
 
 .container {
-  max-width: $breakpoint-xl;
   width: 100%;
   margin: 0 auto;
   background-color: black;
 }
 
 .footer {
+  max-width: $breakpoint-xl;
   padding: 50px 0 20px 0;
   margin: 0 130px;
   @media (max-width: $breakpoint-md) {

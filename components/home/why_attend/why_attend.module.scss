@@ -1,7 +1,6 @@
 @import "styles/constants.scss";
 
 .container {
-  max-width: $breakpoint-xl;
   width: 100%;
   // margin-top: 105px;
   background-color: $bg-black;
@@ -9,8 +8,10 @@
 }
 
 .why_attend {
-  margin: 0 109px;
-  padding: 84px 0;
+  max-width: $breakpoint-xl;
+  margin: 0 auto;
+  padding: 84px 109px;
+  // padding: 84px 0;
 
   @media (max-width: $breakpoint-md) {
     margin: 0 35px;

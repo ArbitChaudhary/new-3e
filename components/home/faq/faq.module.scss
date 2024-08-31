@@ -1,18 +1,19 @@
 @import "styles/constants.scss";
 
 .container {
-  max-width: $breakpoint-xl;
   width: 100%;
   margin: 0 auto;
 }
 
 .faqs {
-  margin: 0 130px;
+  max-width: $breakpoint-xl;
+  margin: 0 auto;
+  padding: 0 130px;
   margin-top: 100px;
   position: relative;
 
   @media (max-width: $breakpoint-md) {
-    margin: 0 35px;
+    padding: 0 35px;
     margin-top: 35px;
   }
 }
