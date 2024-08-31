@@ -1,13 +1,14 @@
 @import "styles/constants.scss";
 
 .container {
-  max-width: $breakpoint-xl;
+  // max-width: $breakpoint-xl;
   width: 100%;
   margin: 0 auto;
   background-color: #d3d3d3;
-  position: relative;
+  // position: relative;
+  z-index: 0;
 
-  @media (max-width: 1200px){
+  @media (max-width: 1140px) {
     background-color: transparent;
   }
 }
@@ -17,25 +18,32 @@
   height: 93px;
   display: flex;
   align-items: center;
-  background-color: transparent;
+  background: transparent;
+  position: relative;
+  // width: 100%;
 
-  @media (max-width: 1200px) {
+  @media (max-width: 1140px) {
+    position: absolute;
+    top: 0;
+    right: 0;
     height: 0;
+    background: transparent;
     @media (max-width: $breakpoint-md) {
+      height: 0;
       margin: 0 35px;
     }
   }
 }
 
 .header_items {
-  // width: 100%;
+  width: 100%;
   display: flex;
   // flex-direction: row;
-  // justify-content: space-between;
+  justify-content: space-between;
   align-items: center;
-  gap: 35px;
+  gap: 20px;
 
-  @media (max-width: $breakpoint-md) {
+  @media (max-width: 1140px) {
     display: none;
   }
 }
@@ -44,10 +52,6 @@
   // height: 101px;
   // width: 120px;
   position: relative;
-
-  @media (max-width: 1200px) {
-    display: none;
-  }
 }
 
 .header_menu {
@@ -55,18 +59,19 @@
   flex-direction: row;
   gap: 1.4rem;
   align-items: center;
-  @media (max-width: 1200px) {
-    display: none;
-  }
 }
 
 .menu {
   font-family: Poppins;
   font-size: 17px;
   font-weight: 500;
-  line-height: 33px;
   text-align: center;
   color: black;
+  transition: all ease 300ms;
+  &:hover {
+    cursor: pointer;
+    color: $button-color;
+  }
 }
 
 .ticket_button {
@@ -78,65 +83,63 @@
   color: $primary-color;
   border: none;
   cursor: pointer;
-
-  @media (max-width: 1200px) {
-    display: none;
-  }
 }
 
 .menu_icon {
   display: none;
 
-  @media (max-width: 1200px) {
+  @media (max-width: 1140px) {
     display: flex;
     justify-content: flex-end;
-    align-items: center;
     width: 100%;
+    position: relative;
+    top: 10px;
+    right: 0;
+    // margin-top: 25px;
+    z-index: 1;
   }
 }
 
 .menu_icon > svg {
-  height: 35px;
-  width: 35px;
+  height: 30px;
+  width: 30px;
   background-color: white;
   color: black;
-  padding: 10px;
+  padding: 5px;
   border-radius: 10px;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  align-self: flex-end;
-  position: fixed;
-  top: 10px;
-  right: 10px;
+  position: relative;
+  margin-top: 60px;
   z-index: 2;
 }
 
 .hide_menu {
-  transform: translateX(100%);
-  transition: ease all 300ms;
+  transform: translateX(150%);
+  transition: all ease 300ms;
   position: absolute;
   top: 0;
   right: 0;
-  max-width: 300px;
-  z-index: 3;
+  width: 250px;
   // width: 100%;
+  z-index: 1000;
   visibility: hidden;
 }
 .show_menu {
   transform: translateX(0);
-  transition: ease all 300ms;
+  transition: all ease 300ms;
   position: absolute;
   top: 0;
-  right: 0;
-  max-width: 300px;
-  z-index: 3;
+  right: -35px;
+  width: 250px;
+  z-index: 1000;
   // width: 100%;
 }
 
 .mobile_nav {
   max-width: 300px;
-  // width: 100%;
+  width: 100%;
   background-color: black;
   color: white;
   border-radius: 16px;
@@ -159,6 +162,7 @@
 
 .nav_item_flex {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   gap: 10px;

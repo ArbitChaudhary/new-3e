@@ -41,8 +41,8 @@ function Header() {
             <Image
               src={Logo}
               alt=""
-              width={70}
-              height={60}
+              width={60}
+              height={50}
               // fill
               // layout="responsive"
               style={{ objectFit: "contain", position: "relative" }}
@@ -56,7 +56,10 @@ function Header() {
             ))}
           </div>
           <button type="button" className={styles.ticket_button}>
-            <a href="http://ticketfam.com/" target="_blank">
+            <a
+              href="https://www.ticketfam.com/dt-fest-2024-659624038"
+              target="_blank"
+            >
               Book Your Ticket
             </a>
           </button>

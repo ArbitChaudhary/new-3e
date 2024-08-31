@@ -1,22 +1,21 @@
 @import "styles/constants.scss";
 
 .container {
-  max-width: $breakpoint-xl;
+  // max-width: $breakpoint-xl;
   width: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   position: relative;
   overflow: hidden;
-  // z-index: -1;
+  z-index: 900;
 }
 
 .header {
-  // position: fixed;
+  position: relative;
   top: 0;
   left: 0;
-  z-index: 999;
+  z-index: 900;
   width: 100%;
-  // height: fit-content;
   // overflow: hidden;
 }

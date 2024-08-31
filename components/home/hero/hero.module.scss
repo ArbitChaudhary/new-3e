@@ -3,19 +3,19 @@
 .container {
   max-width: $breakpoint-xl;
   width: 100%;
-  // height: 902px;
-  // height: 100%;
   margin: 0 auto;
-  background: url("../../../public//Banner.png");
+  background: url("../../../public/Banner.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  z-index: 0;
 }
 
 .hero {
   margin: 0 130px;
   padding-bottom: 100px;
+  position: relative;
 
   @media (max-width: $breakpoint-md) {
     margin: 0 35px;
@@ -27,10 +27,11 @@
   // width: 100%;
   height: 150px;
   position: relative;
-  margin-top: 150px;
+  padding-top: 150px;
+  z-index: -5;
 
   @media (max-width: $breakpoint-md) {
-    margin-top: 100px;
+    padding-top: 100px;
   }
 }
 
@@ -103,16 +104,16 @@
 }
 
 .banner_ticket_button {
-  width: 355px;
-  height: 80px;
-  // top: 491px;
-  // left: 543px;
-  padding: 19px 47px 19px 47px;
+  padding: 19px 35px 19px 35px;
   gap: 10px;
   border-radius: 9px;
   border: none;
   background-color: $button-color;
   color: $primary-color;
+
+  @media (max-width: $breakpoint-md) {
+    padding: 15px 25px;
+  }
 }
 
 .button_flex {
@@ -126,4 +127,8 @@
 .button_flex > span {
   font-size: 28px;
   font-weight: 500;
+
+  @media (max-width: $breakpoint-md) {
+    font-size: 20px;
+  }
 }

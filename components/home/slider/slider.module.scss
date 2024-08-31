@@ -4,15 +4,17 @@
   max-width: $breakpoint-xl;
   width: 100%;
   background-color: black;
+  z-index: 11;
 }
 
 .slide_text {
   font-family: Poppins;
   font-size: 40px;
   font-weight: 700;
-  line-height: 60px;
   text-align: center;
   color: $primary-color;
+  white-space: nowrap;
+  overflow: auto;
 
   @media (max-width: $breakpoint-md) {
     font-family: Poppins;

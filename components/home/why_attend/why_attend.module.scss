@@ -5,6 +5,7 @@
   width: 100%;
   // margin-top: 105px;
   background-color: $bg-black;
+  z-index: 35;
 }
 
 .why_attend {
@@ -45,6 +46,10 @@
 
   @media (max-width: $breakpoint-md) {
     margin-top: 35px;
+
+    @media (max-width: $breakpoint-sm) {
+      display: none;
+    }
   }
 }
 
@@ -106,4 +111,20 @@
 .title:hover {
   cursor: pointer;
   background-color: $button-color;
+}
+
+.desktop_slider {
+  display: inline-block;
+
+  @media (max-width: $breakpoint-sm) {
+    display: none;
+  }
+}
+
+.mobile_slider {
+  display: none;
+  @media (max-width: $breakpoint-sm) {
+    display: flex;
+    justify-content: center;
+  }
 }

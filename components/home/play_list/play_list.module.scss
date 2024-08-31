@@ -5,6 +5,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  z-index: 11;
 }
 
 .play_list_container {
@@ -18,7 +19,7 @@
 
 .top {
   position: relative;
-  margin-top: 65px;
+  padding-top: 65px;
   display: flex;
   flex-direction: row;
   gap: 30px;
@@ -26,7 +27,7 @@
   justify-content: space-between;
 
   @media (max-width: $breakpoint-md) {
-    margin-top: 37px;
+    padding-top: 37px;
   }
 }
 
@@ -106,7 +107,7 @@
   display: grid;
   //   grid-template-columns: 1fr 1fr;
   gap: 83px;
-  margin-bottom: 50px;
+  padding-bottom: 50px;
 }
 
 .bottom_left {

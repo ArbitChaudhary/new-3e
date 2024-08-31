@@ -8,6 +8,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   padding: 55px 0;
+  z-index: 11;
   @media (max-width: $breakpoint-md) {
     padding: 35px 0;
   }
@@ -35,13 +36,9 @@
 }
 
 .vendor_logo_list {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 15px;
-
+  margin-top: 80px;
   @media (max-width: $breakpoint-md) {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
+    margin-top: 50px;
   }
 }
 

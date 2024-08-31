@@ -24,7 +24,13 @@ function Celebration() {
                 style={{ objectFit: "cover" }}
               />
             </div> */}
-            <div style={{ display: "flex", justifyContent: "center", width: "100%" }}>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                width: "100%",
+              }}
+            >
               <Animation />
             </div>
             <div className={styles.celebration_content}>

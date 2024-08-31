@@ -75,14 +75,9 @@
 }
 
 .button_container > button {
-  width: 384px;
-  height: 80px;
-  top: 901px;
-  left: 532px;
-  padding: 29px 36px 29px 36px;
-  gap: 10px;
+  // width: 384px;
+  padding: 23px 36px 23px 36px;
   border-radius: 9px;
-   //;
   background-color: $button-color;
   border: none;
   font-size: 32px;
@@ -90,7 +85,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: $breakpoint-md) {
+    font-size: 20px;
+    padding: 17px 25px;
+  }
 }
+
 
 .kids_image {
   flex: 1;

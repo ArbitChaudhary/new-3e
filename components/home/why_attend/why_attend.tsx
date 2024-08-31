@@ -7,6 +7,7 @@ import KumariExhibition from "./kumari_exihibition/kumari_exhibition";
 import KitesFestival from "./kites_festival/kites_festival";
 import ArtsAndCrafts from "./arts_and_crafts/arts_and_crafts";
 import DashainShopping from "./dashai_shopping/dashain_shopping";
+import Sliders from "./slider/slider";
 
 const whyList = [
   "Kids Zone",
@@ -46,7 +47,7 @@ function WhyAttend() {
               </>
             ))}
           </div>
-          <div style={{ marginTop: "75px" }}>
+          <div className={styles.desktop_slider} style={{ marginTop: "75px" }}>
             {isActive === 0 && <KidsZone />}
             {isActive === 1 && <BeerGarden />}
             {isActive === 2 && <Cuisine />}
@@ -55,6 +56,9 @@ function WhyAttend() {
             {isActive === 5 && <ArtsAndCrafts />}
             {isActive === 6 && <DashainShopping />}
           </div>
+        </div>
+        <div className={styles.mobile_slider}>
+          <Sliders />
         </div>
       </div>
     </main>
