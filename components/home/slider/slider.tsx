@@ -7,9 +7,7 @@ const Sliders: React.FC = () => {
     <div className={styles.container}>
       <div className={styles.scrolling_text}>
         {" "}
-        Prices go up high in 24 hours! Prices go up high in 24 hours! Prices go
-        up high in 24 hours! Prices go up high in 24 hours! Prices go up high in
-        24 hours!
+        Prices go up high in 24 hours! Prices go up high in 24 hours!
       </div>
     </div>
   );

@@ -17,10 +17,11 @@
 .vendor_logos_box {
   max-width: $breakpoint-xl;
 
-  margin: 0 130px;
+  padding: 0 130px;
+  margin: 0 auto;
 
   @media (max-width: $breakpoint-md) {
-    margin: 0 35px;
+    padding: 0 35px;
   }
 }
 
