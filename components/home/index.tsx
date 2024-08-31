@@ -9,6 +9,7 @@ import Sliders from "./slider/slider";
 import Sponsors from "./sponsors/sponsors";
 import Tickets from "./tickets/tickets";
 import Vendors from "./vendors/vendors";
+import ScrollableComponent from "./why_attend/why_attend";
 import WhyAttend from "./why_attend/why_attend";
 
 const HomePage = () => {
@@ -18,7 +19,9 @@ const HomePage = () => {
       {/* <Header /> */}
       <Hero />
       <Celebration />
-      <WhyAttend />
+      {/* <WhyAttend />
+       */}
+      <ScrollableComponent />
       <ArtistsLineup />
       <PlayList />
       <Sliders />

@@ -77,10 +77,10 @@ class Animation extends Component {
               src={dance1}
               alt={"image"}
               height={812}
-              //   width={375}
+              width={375}
               // fill
               layout="responsive"
-              style={{ objectFit: "cover", position: "relative" }}
+              style={{ objectFit: "contain", position: "relative" }}
             />
           </div>
           <div className={styles.celebration_image}>
@@ -88,10 +88,10 @@ class Animation extends Component {
               src={dance2}
               alt={"image"}
               height={812}
-              //   width={375}
+              width={375}
               // fill
               layout="responsive"
-              style={{ objectFit: "cover", position: "relative" }}
+              style={{ objectFit: "contain", position: "relative" }}
             />
           </div>
           <div className={styles.celebration_image}>

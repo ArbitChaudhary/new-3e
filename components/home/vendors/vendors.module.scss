@@ -47,7 +47,8 @@
 
   @media (max-width: $breakpoint-md) {
     grid-template-columns: 1fr;
-    margin-top: 24px;
+    margin-top: 37px;
+    gap: 37px;
   }
 }
 
@@ -91,8 +92,8 @@
 }
 
 .view_vendor_btn {
-  max-width: 350px;
-  width: 100%;
+  // max-width: 350px;
+  // width: 100%;
   padding: 23px 36px 23px 36px;
   gap: 10px;
   border-radius: 9px;
@@ -128,8 +129,8 @@
 }
 
 .performers {
-  max-width: 390px;
-  width: 100%;
+  // max-width: 390px;
+  // width: 100%;
   padding: 23px 33px 23px 33px;
   border-radius: 9px;
   background-color: $button-color;
@@ -146,7 +147,7 @@
   }
 }
 .vendor_app {
-  max-width: 390px;
+  // max-width: 390px;
   width: 100%;
   padding: 23px 33px 23px 33px;
   border-radius: 9px;
@@ -165,7 +166,7 @@
 }
 
 .volunteer {
-  max-width: 390px;
+  // max-width: 390px;
   width: 100%;
   padding: 23px 33px 23px 33px;
   border-radius: 9px;
@@ -187,10 +188,10 @@
 .cultural_pot {
   position: absolute;
   bottom: 0;
-  right: -60px;
+  right: -45px;
   z-index: -1;
 
   @media (max-width: $breakpoint-md) {
-    right: -20px;
+    right: -70px;
   }
 }

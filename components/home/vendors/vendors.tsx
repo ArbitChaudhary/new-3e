@@ -65,8 +65,8 @@ function Vendors() {
               alt="Pot"
               height={346}
               width={149}
-              layout="responsive"
-              style={{ position: "relative" }}
+              // layout="responsive"
+              style={{ position: "relative", objectFit: "contain" }}
             />
           </div>
         </div>

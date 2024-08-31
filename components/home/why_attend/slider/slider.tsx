@@ -33,16 +33,18 @@ class Sliders extends Component {
   render() {
     const settings = {
       dots: true,
-      arrows: true,
+      arrows: false,
       infinite: true,
       slidesToShow: 1,
       slidesToScroll: 1,
       autoplay: false,
       speed: 1000,
       autoplaySpeed: 0,
+      centerMode: true,
       cssEase: "linear",
-      prevArrow: <CustomPrevArrow />,
-      nextArrow: <CustomNextArrow />,
+      // spacing: "20px",
+      // prevArrow: <CustomPrevArrow />,
+      // nextArrow: <CustomNextArrow />,
 
       // responsive: [
       //   {
@@ -106,15 +108,15 @@ class Sliders extends Component {
 
 export default Sliders;
 
-const CustomPrevArrow: React.FC = (props) => (
-  <button {...props} className={`${styles.customArrow} ${styles.prevArrow}`}>
-    <MdOutlineKeyboardArrowLeft />
-  </button>
-);
+// const CustomPrevArrow: React.FC = (props) => (
+//   <button {...props} className={`${styles.customArrow} ${styles.prevArrow}`}>
+//     <MdOutlineKeyboardArrowLeft />
+//   </button>
+// );
 
 // Custom Next Arrow Component
-const CustomNextArrow: React.FC = (props) => (
-  <button {...props} className={`${styles.customArrow} ${styles.nextArrow}`}>
-    <MdOutlineArrowForwardIos />
-  </button>
-);
+// const CustomNextArrow: React.FC = (props) => (
+//   <button {...props} className={`${styles.customArrow} ${styles.nextArrow}`}>
+//     <MdOutlineArrowForwardIos />
+//   </button>
+// );
