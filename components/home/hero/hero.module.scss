@@ -40,11 +40,14 @@
   top: 0;
   left: 50%;
   transform: translate(-50%);
+  animation: float 4s ease-in-out infinite;
 }
 .kite2 {
   position: absolute;
   bottom: 0;
   left: 0;
+  animation: float 4s ease-in-out infinite;
+
   // left: 50%;
   // transform: translate(-50%);
 }
@@ -52,6 +55,8 @@
   position: absolute;
   top: 25%;
   right: 0;
+  animation: float 4s ease-in-out infinite;
+
   // left: 50%;
   // transform: translate(-50%);
 }
@@ -131,4 +136,30 @@
   @media (max-width: $breakpoint-md) {
     font-size: 20px;
   }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(5deg);
+  }
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+}
+
+.kite_container {
+  position: relative;
+  width: 200px; /* Adjust based on your kite image size */
+  height: 200px; /* Adjust based on your kite image size */
+}
+
+.kite_image {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: float 4s ease-in-out infinite;
 }
