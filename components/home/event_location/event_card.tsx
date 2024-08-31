@@ -14,7 +14,7 @@ function EventCard({ image, title }: IEventCard) {
           src={image}
           alt="Event Image"
           height={390}
-          width={279}
+          // width={279}
           //  layout="responsive"
           style={{ position: "relative", objectFit: "cover" }}
         />

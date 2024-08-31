@@ -60,13 +60,18 @@
 .events {
   width: 100%;
   margin-top: 32px;
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  // flex-direction: row;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 21px;
   overflow: scroll;
 
-  @media (min-width: $breakpoint-md) {
+  @media (max-width: $breakpoint-md) {
     margin-top: 90px;
+    display: flex;
+    flex-direction: row;
+    gap: 21px;
+    overflow: scroll;
   }
 }
 

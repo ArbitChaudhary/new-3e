@@ -19,8 +19,8 @@ const HomePage = () => {
       {/* <Header /> */}
       <Hero />
       <Celebration />
-      {/* <WhyAttend />
-       */}
+      {/* <WhyAttend /> */}
+      
       <ScrollableComponent />
       <ArtistsLineup />
       <PlayList />

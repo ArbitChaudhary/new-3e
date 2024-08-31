@@ -6,7 +6,7 @@
   z-index: 11;
 }
 
-.slide_text {
+.scrolling_text {
   max-width: $breakpoint-xl;
   margin: 0 130px;
   font-family: Poppins;
@@ -15,7 +15,9 @@
   text-align: center;
   color: $primary-color;
   white-space: nowrap;
-  overflow: auto;
+  display: inline-block; /* Make text a block-level element for animation */
+  padding-left: 100%; /* Start the text off-screen on the right */
+  animation: scroll-text 30s linear infinite;
 
   @media (max-width: $breakpoint-md) {
     margin: 0 35px;
@@ -23,5 +25,18 @@
     font-size: 20px;
     font-weight: 700;
     text-align: center;
+  }
+}
+
+// .scrolling-text {
+//   /* Adjust the duration for slower scrolling */
+// }
+
+@keyframes scroll-text {
+  from {
+    transform: translateX(100%); /* Start position off the right edge */
+  }
+  to {
+    transform: translateX(-100%); /* End position off the left edge */
   }
 }
