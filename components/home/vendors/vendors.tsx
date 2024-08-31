@@ -2,6 +2,7 @@ import Image from "next/image";
 import styles from "./vendors.module.scss";
 import vendorImage from "../../../public/vendor-banner.png";
 import pot from "../../../public/ClayJar .png";
+import bgImage from "../../../public/bg-flower.png";
 
 function Vendors() {
   return (
