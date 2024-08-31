@@ -2,14 +2,13 @@ import Image from "next/image";
 import styles from "./vendors.module.scss";
 import vendorImage from "../../../public/vendor-banner.png";
 import pot from "../../../public/ClayJar .png";
-import bgImagge from "../../../public/bg-flower.png";
 
 function Vendors() {
   return (
     <>
       <div className={styles.container} id="vendor">
         <div className={styles.bg_flower}>
-          <Image src={bgImagge} alt="bg" fill />
+          <Image src={bgImage} alt="bg" fill />
         </div>
         <div className={styles.vendor}>
           <div className={styles.head}>Support & Vendor</div>
