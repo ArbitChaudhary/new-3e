@@ -14,13 +14,14 @@ const Hero = () => {
         <div className={styles.hero}>
           <div className={styles.banner}>
             <div className={styles.kite_box}>
-              <div className={styles.kite1}>
+              <div className={styles.kite_image}>
                 <Image
                   src={kite2}
                   alt="Kite"
                   height={79}
                   width={48}
                   style={{ objectFit: "contain", position: "relative" }}
+                  className="kite-image"
                 />
               </div>
               <div className={styles.kite2}>
