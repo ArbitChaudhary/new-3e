@@ -1,7 +1,8 @@
 import Image from "next/image";
 import styles from "./vendors.module.scss";
-// import vendorImage from "../../../public/vendor-banner.png";
+import vendorImage from "../../../public/vendor-banner.png";
 import pot from "../../../public/ClayJar .png";
+import bgImagge from "../../../public/bg-flower.png";
 
 function Vendors() {
   return (
@@ -30,15 +31,14 @@ function Vendors() {
                 ></script>
               </mapplic.map> */}
               <div className={styles.vendor_image}>
-                {/* <Image
+                <Image
                   src={vendorImage}
                   alt="Vendor"
                   height={564}
                   width={580}
                   layout="responsive"
                   style={{ position: "relative", objectFit: "cover" }}
-                /> */}
-                <MapplicMap />
+                />
               </div>
               <button className={styles.vendor_map_btn}> Vendor Map</button>
               <button className={styles.vendor_application}>
