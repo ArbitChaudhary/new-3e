@@ -46,10 +46,7 @@
 
   @media (max-width: $breakpoint-md) {
     margin-top: 35px;
-
-    @media (max-width: $breakpoint-sm) {
-      display: none;
-    }
+    margin-bottom: 35px;
   }
 }
 
