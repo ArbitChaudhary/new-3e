@@ -2,6 +2,8 @@ import { useState } from "react";
 import styles from "./faq.module.scss";
 import { AiOutlinePlus } from "react-icons/ai";
 import { AiOutlineMinus } from "react-icons/ai";
+import Image from "next/image";
+import bgFlower from "../../../public/bg-flower.png";
 
 interface IFAQs {
   question: string;
@@ -30,6 +32,9 @@ function FAQ() {
   return (
     <>
       <div className={styles.container}>
+        <div className={styles.bg_image}>
+          <Image src={bgFlower} alt="bg" fill />
+        </div>
         <div className={styles.faqs}>
           <div className={styles.header}>FAQs</div>
           <div className={styles.faq_list}>

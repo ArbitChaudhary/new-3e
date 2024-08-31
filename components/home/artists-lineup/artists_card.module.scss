@@ -2,12 +2,18 @@
 
 .artists_container {
   width: 100%;
-  height: 192px;
+  height: 250px;
   gap: 0px;
   border-radius: 16px;
   position: relative;
   display: flex;
   flex-direction: column;
+
+  @media (max-width: $breakpoint-md){
+    height: 192px;
+  }
+
+
 }
 .container {
   display: flex;

@@ -88,9 +88,28 @@
   @media (max-width: $breakpoint-md) {
     font-size: 20px;
     padding: 17px 25px;
+    display: none;
   }
 }
-
+.vendor_application {
+  display: none;
+  max-width: 350px;
+  width: 100%;
+  padding: 23px 36px 23px 36px;
+  border-radius: 9px;
+  border: none;
+  background-color: $button-color;
+  font-family: Poppins;
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
+  color: $primary-color;
+  @media (max-width: $breakpoint-md) {
+    display: inline-block;
+    font-size: 20px;
+    padding: 17px 25px;
+  }
+}
 .view_vendor_btn {
   // max-width: 350px;
   // width: 100%;
@@ -107,6 +126,7 @@
   @media (max-width: $breakpoint-md) {
     font-size: 20px;
     padding: 17px 25px;
+    display: none;
   }
 }
 
@@ -125,11 +145,12 @@
 
   @media (max-width: $breakpoint-md) {
     font-size: 20px;
+    // max-width: 273px;
   }
 }
 
 .performers {
-  // max-width: 390px;
+  max-width: 390px;
   // width: 100%;
   padding: 23px 33px 23px 33px;
   border-radius: 9px;
@@ -144,10 +165,13 @@
   @media (max-width: $breakpoint-md) {
     font-size: 20px;
     padding: 17px 25px;
+    max-width: 273px;
+    background: black;
+    color: white;
   }
 }
 .vendor_app {
-  // max-width: 390px;
+  max-width: 390px;
   width: 100%;
   padding: 23px 33px 23px 33px;
   border-radius: 9px;
@@ -160,13 +184,15 @@
   border: 2px solid black;
 
   @media (max-width: $breakpoint-md) {
+    display: none;
     font-size: 20px;
     padding: 17px 25px;
+    max-width: 273px;
   }
 }
 
 .volunteer {
-  // max-width: 390px;
+  max-width: 390px;
   width: 100%;
   padding: 23px 33px 23px 33px;
   border-radius: 9px;
@@ -181,10 +207,60 @@
 
   @media (max-width: $breakpoint-md) {
     font-size: 20px;
+    max-width: 273px;
+    padding: 17px 25px;
+    display: none;
+  }
+}
+
+.volunteer_support {
+  max-width: 390px;
+  display: none;
+  width: 100%;
+  padding: 23px 33px 23px 33px;
+  border-radius: 9px;
+  //;
+  background-color: transparent;
+  color: black;
+  font-family: Poppins;
+  font-size: 28px;
+  font-weight: 500;
+  text-align: center;
+  border: 2px solid black;
+
+  @media (max-width: $breakpoint-md) {
+    display: block;
+    font-size: 20px;
+    max-width: 273px;
     padding: 17px 25px;
   }
 }
 
+.vendor_view {
+  display: none;
+  width: 100%;
+  // padding: 23px 33px 23px 33px;
+  border-radius: 9px;
+  width: fit-content;
+  //;
+  background-color: transparent;
+  color: $text-black;
+  font-family: Poppins;
+  font-size: 28px;
+  font-weight: 500;
+  text-align: center;
+  border: none;
+  border-bottom: 2px solid black;
+  border-radius: 0;
+
+  @media (max-width: $breakpoint-md) {
+    display: inline-block;
+    font-size: 20px;
+    max-width: 273px;
+    width: fit-content;
+    // padding: 17px 25px;
+  }
+}
 .cultural_pot {
   position: absolute;
   bottom: 0;
@@ -194,4 +270,13 @@
   @media (max-width: $breakpoint-md) {
     right: -70px;
   }
+}
+
+.bg_flower {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  z-index: -1;
+  height: 286px;
+  width: 286px;
 }

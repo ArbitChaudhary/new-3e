@@ -37,12 +37,15 @@
   }
 }
 .celebration_image {
-  // max-width: 375px;
+  max-width: 375px;
+  width: 100%;
+  max-height: 812px;
+  height: 100%;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  // width: 100%;
 }
 
 .celebration_content {

@@ -2,11 +2,15 @@ import Image from "next/image";
 import styles from "./vendors.module.scss";
 import vendorImage from "../../../public/vendor-banner.png";
 import pot from "../../../public/ClayJar .png";
+import bgImagge from "../../../public/bg-flower.png";
 
 function Vendors() {
   return (
     <>
       <div className={styles.container} id="vendor">
+        <div className={styles.bg_flower}>
+          <Image src={bgImagge} alt="bg" fill />
+        </div>
         <div className={styles.vendor}>
           <div className={styles.head}>Support & Vendor</div>
           <div className={styles.vendor_grid}>
@@ -37,6 +41,10 @@ function Vendors() {
                 />
               </div>
               <button className={styles.vendor_map_btn}> Vendor Map</button>
+              <button className={styles.vendor_application}>
+                {" "}
+                Vendor Application
+              </button>
               <button className={styles.view_vendor_btn}>
                 Veiw All Vendors{" "}
               </button>
@@ -57,6 +65,10 @@ function Vendors() {
                 Volunteer Application
               </button>
               <button className={styles.vendor_app}>Vendor Application</button>
+              <button className={styles.volunteer_support}>
+                Volunteer Support
+              </button>
+              <button className={styles.vendor_view}>View All Vendors</button>
             </div>
           </div>
           <div className={styles.cultural_pot}>

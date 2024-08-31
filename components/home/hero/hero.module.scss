@@ -104,7 +104,7 @@
 }
 
 .banner_ticket_button {
-  padding: 19px 35px 19px 35px;
+  padding: 19px 61px 19px 61px;
   gap: 10px;
   border-radius: 9px;
   border: none;
@@ -112,7 +112,7 @@
   color: $primary-color;
 
   @media (max-width: $breakpoint-md) {
-    padding: 15px 25px;
+    padding: 15px 56px;
   }
 }
 
