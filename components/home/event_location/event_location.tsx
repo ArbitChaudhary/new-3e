@@ -7,7 +7,7 @@ import FAQ from "../faq/faq";
 function EventLocation() {
   return (
     <>
-      <div className={styles.container}>
+      <div className={styles.container} id="event_location">
         <div className={styles.event_location}>
           <div className={styles.header}>Event Location</div>
           <div className={styles.address_flex}>

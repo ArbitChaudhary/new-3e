@@ -82,6 +82,13 @@ function WhyAttend() {
               <DashainShopping />
             </Slider>
           </div>
+          <div className={styles.button_container}>
+          <button>
+            <a href="http://ticketfam.com/" target="_black">
+              Book Your Ticket
+            </a>
+          </button>
+        </div>
         </div>
       </div>
     </main>

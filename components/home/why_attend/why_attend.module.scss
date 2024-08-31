@@ -126,3 +126,30 @@
     justify-content: center;
   }
 }
+
+
+.button_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 75px;
+}
+
+.button_container > button {
+  // max-width: 384px;
+  // width: 100%;
+  padding: 23px 36px 23px 36px;
+  border-radius: 9px;
+  background-color: $button-color;
+  border: none;
+  font-size: 32px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: $breakpoint-md) {
+    font-size: 20px;
+    padding: 17px 25px;
+  }
+}

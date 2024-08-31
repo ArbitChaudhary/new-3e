@@ -7,7 +7,7 @@
   // position: relative;
   z-index: 0;
 
-  @media (max-width: 1140px) {
+  @media (max-width: 1200px) {
     background-color: transparent;
   }
 }
@@ -23,7 +23,7 @@
   position: relative;
   // width: 100%;
 
-  @media (max-width: 1140px) {
+  @media (max-width: 1200px) {
     position: absolute;
     top: 0;
     right: 0;
@@ -44,7 +44,7 @@
   align-items: center;
   gap: 20px;
 
-  @media (max-width: 1140px) {
+  @media (max-width: 1200px) {
     display: none;
   }
 }
@@ -76,7 +76,7 @@
 }
 
 .ticket_button {
-  padding: 12px 15px 12px 15px;
+  padding: 20px 21px 20px 21px;
   border-radius: 9px;
   background-color: $button-color;
   font-size: 18px;
@@ -89,7 +89,7 @@
 .menu_icon {
   display: none;
 
-  @media (max-width: 1140px) {
+  @media (max-width: 1200px) {
     display: flex;
     justify-content: flex-end;
     width: 100%;
@@ -166,7 +166,6 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  gap: 10px;
   padding: 20px 20px;
   border-bottom: 1px solid white;
 }

@@ -41,8 +41,8 @@ function Header() {
             <Image
               src={Logo}
               alt=""
-              width={60}
-              height={50}
+              width={93}
+              height={83}
               // fill
               // layout="responsive"
               style={{ objectFit: "contain", position: "relative" }}
@@ -89,22 +89,30 @@ function MobileMenu({ setOpenMenu }: IMobileMenu) {
           <IoMdClose onClick={() => setOpenMenu(false)} />
         </div>
         <div className={styles.nav_items}>
-          <div className={styles.nav_item_flex}>
-            <div className={styles.menu_item}>Festival Highlights</div>
-            <IoIosArrowForward />
-          </div>
-          <div className={styles.nav_item_flex}>
-            <div className={styles.menu_item}>Tickets</div>
-            <IoIosArrowForward />
-          </div>
-          <div className={styles.nav_item_flex}>
-            <div className={styles.menu_item}>Vendors & Sponsors</div>
-            <IoIosArrowForward />
-          </div>
-          <div className={styles.nav_item_flex}>
-            <div className={styles.menu_item}>Venue Direction</div>
-            <IoIosArrowForward />
-          </div>
+          <a href="#festivals">
+            <div className={styles.nav_item_flex}>
+              <div className={styles.menu_item}>Festival Highlights</div>
+              <IoIosArrowForward />
+            </div>
+          </a>
+          <a href="#ticket">
+            <div className={styles.nav_item_flex}>
+              <div className={styles.menu_item}>Tickets</div>
+              <IoIosArrowForward />
+            </div>
+          </a>
+          <a href="#vendor">
+            <div className={styles.nav_item_flex}>
+              <div className={styles.menu_item}>Vendors & Sponsors</div>
+              <IoIosArrowForward />
+            </div>
+          </a>
+          <a href="#event_location">
+            <div className={styles.nav_item_flex}>
+              <div className={styles.menu_item}>Venue Direction</div>
+              <IoIosArrowForward />
+            </div>
+          </a>
         </div>
       </div>
     </>
