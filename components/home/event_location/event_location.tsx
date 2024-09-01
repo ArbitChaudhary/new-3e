@@ -6,7 +6,7 @@ import FAQ from "../faq/faq";
 
 function EventLocation() {
   return (
-    <>
+    <div>
       <div className={styles.container} id="event_location">
         <div className={styles.event_location}>
           <div className={styles.header}>Event Location</div>
@@ -38,7 +38,7 @@ function EventLocation() {
         <UpcomingEvents />
         <FAQ />
       </div>
-    </>
+    </div>
   );
 }
 
