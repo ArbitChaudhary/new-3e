@@ -12,10 +12,10 @@ function ArtistsLineup() {
             <Image
               src={bgImage}
               alt="BG"
-              height={100}
-              width={100}
-              layout="responsive"
-              style={{ objectFit: "contain", position: "relative" }}
+              // height={286}
+              // width={286}
+              // layout="responsive"
+              fill
             />
           </div>
           <h1 className={styles.header}> 2024 Artists lineup </h1>
