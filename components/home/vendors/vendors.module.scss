@@ -14,7 +14,6 @@
   z-index: 11;
 
   @media (max-width: $breakpoint-md) {
-    
     padding: 42px 0;
   }
 }
@@ -281,4 +280,8 @@
   z-index: -1;
   height: 286px;
   width: 286px;
+
+  @media (max-width: $breakpoint-md) {
+    display: none;
+  }
 }

@@ -2,6 +2,8 @@ import { useState } from "react";
 import styles from "./faq.module.scss";
 import { AiOutlinePlus } from "react-icons/ai";
 import { AiOutlineMinus } from "react-icons/ai";
+import Image from "next/image";
+import bgFlower from "../../../public/bg-flower.png";
 
 interface IFAQs {
   question: string;
@@ -9,6 +11,16 @@ interface IFAQs {
 }
 
 const faqs: IFAQs[] = [
+  {
+    question: "What makes you different from other Firms?",
+    reply:
+      "At Launch Business Law, we distinguish ourselves with personalized, expert legal services in IP & trademark, franchise, and corporate law. Our tailored solutions, innovative approach, and commitment to clear communication ensure that your business receives precise and effective legal support. With a proven track record and global perspective, we’re dedicated to helping your business thrive",
+  },
+  {
+    question: "What makes you different from other Firms?",
+    reply:
+      "At Launch Business Law, we distinguish ourselves with personalized, expert legal services in IP & trademark, franchise, and corporate law. Our tailored solutions, innovative approach, and commitment to clear communication ensure that your business receives precise and effective legal support. With a proven track record and global perspective, we’re dedicated to helping your business thrive",
+  },
   {
     question: "What makes you different from other Firms?",
     reply:
@@ -31,6 +43,9 @@ function FAQ() {
     <>
       <div className={styles.container}>
         <div className={styles.faqs}>
+          <div className={styles.bg_flower}>
+            <Image src={bgFlower} alt="BG" fill style={{ zIndex: -1 }} />
+          </div>
           <div className={styles.header}>FAQs</div>
           <div className={styles.faq_list}>
             {faqs?.map((item, index) => (

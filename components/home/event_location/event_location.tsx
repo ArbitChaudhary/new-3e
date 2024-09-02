@@ -3,12 +3,16 @@ import styles from "./event_location.module.scss";
 import map from "../../../public/Figmap.png";
 import UpcomingEvents from "./upcoming_events";
 import FAQ from "../faq/faq";
+import bgFlower from "../../../public/bg-flower.png";
 
 function EventLocation() {
   return (
     <div>
       <div className={styles.container} id="event_location">
         <div className={styles.event_location}>
+          <div className={styles.bg_flower}>
+            <Image src={bgFlower} alt="bg" fill />
+          </div>
           <div className={styles.header}>Event Location</div>
           <div className={styles.address_flex}>
             <div className={styles.venue_address}>Venue Address:</div>

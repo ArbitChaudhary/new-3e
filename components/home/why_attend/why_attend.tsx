@@ -31,7 +31,7 @@ const mainSettings = {
   autoplay: false,
   speed: 1000,
   autoplaySpeed: 0,
-  centerMode: true,
+  // centerMode: true,
   cssEase: "linear",
 };
 
@@ -83,12 +83,12 @@ function WhyAttend() {
             </Slider>
           </div>
           <div className={styles.button_container}>
-          <button>
-            <a href="http://ticketfam.com/" target="_black">
-              Book Your Ticket
-            </a>
-          </button>
-        </div>
+            <button>
+              <a href="http://ticketfam.com/" target="_black">
+                Book Your Ticket
+              </a>
+            </button>
+          </div>
         </div>
       </div>
     </main>

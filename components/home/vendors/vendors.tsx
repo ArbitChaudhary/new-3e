@@ -3,6 +3,7 @@ import styles from "./vendors.module.scss";
 import vendorImage from "../../../public/vendor-banner.png";
 import pot from "../../../public/ClayJar .png";
 import bgImage from "../../../public/bg-flower.png";
+import MapplicMap from "./maplic_map";
 
 function Vendors() {
   return (
@@ -22,7 +23,6 @@ function Vendors() {
                   src="https://mapplic.com/mapplic.js"
                 ></script>
               </mapplic-map> */}
-              {/* <MapplicMap /> */}
               {/* <mapplic.map data-json="https://mapplic.com/getMapData?id=FAuMxQrcODG1iqqSk0Eh">
                 <script
                   type="text/javascript"
@@ -40,6 +40,7 @@ function Vendors() {
                   style={{ position: "relative", objectFit: "cover" }}
                 />
               </div>
+              {/* <MapplicMap /> */}
               <button className={styles.vendor_map_btn}> Vendor Map</button>
               <button className={styles.vendor_application}>
                 {" "}
