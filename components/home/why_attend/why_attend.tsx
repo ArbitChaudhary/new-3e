@@ -29,7 +29,7 @@ const mainSettings = {
   slidesToShow: 1,
   slidesToScroll: 1,
   autoplay: false,
-  speed: 1000,
+  speed: 500,
   autoplaySpeed: 0,
   // centerMode: true,
   cssEase: "linear",
@@ -38,14 +38,30 @@ const mainSettings = {
 function WhyAttend() {
   const [isActive, setIsActive] = useState<number>(0);
   const sliderRef = useRef<Slider>(null); // Ref for the Slider component
+  const listContainerRef = useRef<HTMLDivElement>(null);
 
   const handleClick = (index: number) => {
     setIsActive(index);
     sliderRef.current?.slickGoTo(index); // Change the slide based on the clicked item
   };
 
+  // const handleAfterChange = (index: number) => {
+  //   setIsActive(index); // Update isActive when the slide changes
+  // };
+
   const handleAfterChange = (index: number) => {
     setIsActive(index); // Update isActive when the slide changes
+
+    // Scroll the list container to ensure the active item is in view
+    const listContainer = listContainerRef.current;
+    if (listContainer) {
+      const itemWidth = listContainer.children[0].clientWidth;
+      const offset = index * itemWidth;
+      listContainer.scrollTo({
+        left: offset,
+        behavior: "smooth",
+      });
+    }
   };
 
   return (
@@ -53,7 +69,7 @@ function WhyAttend() {
       <div className={styles.container}>
         <div className={styles.why_attend}>
           <div className={styles.header}>Why Attend DT Fest 2024?</div>
-          <div className={styles.list_container}>
+          <div className={styles.list_container} ref={listContainerRef}>
             {whyList.map((item, index) => (
               <div
                 key={index}

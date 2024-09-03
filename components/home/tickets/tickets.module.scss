@@ -252,7 +252,7 @@ $asteroids-belt-pl: 210px;
   position: relative;
   div {
     border-radius: 1000px;
-    top: 500px;
+    top: 400px;
     left: 50%;
     position: absolute;
     z-index: -10;
@@ -370,7 +370,7 @@ $asteroids-belt-pl: 210px;
   width: $jupiter-orb;
   margin-top: -$jupiter-orb / 2;
   margin-left: -$jupiter-orb / 2;
-  animation: orb revolution(4331) linear infinite;
+  animation: orb revolution(431) linear infinite;
   &:before {
     height: $jupiter-pl;
     width: $jupiter-pl;
@@ -384,7 +384,7 @@ $asteroids-belt-pl: 210px;
   width: $saturn-orb;
   margin-top: -$saturn-orb / 2;
   margin-left: -$saturn-orb / 2;
-  animation: orb revolution(10747) linear infinite;
+  animation: orb revolution(747) linear infinite;
   &:before {
     height: $saturn-pl;
     width: $saturn-pl;
@@ -415,7 +415,7 @@ $asteroids-belt-pl: 210px;
   width: $uranus-orb;
   margin-top: -$uranus-orb / 2;
   margin-left: -$uranus-orb / 2;
-  animation: orb revolution(30589) linear infinite;
+  animation: orb revolution(589) linear infinite;
   &:before {
     height: $uranus-pl;
     width: $uranus-pl;
@@ -430,7 +430,7 @@ $asteroids-belt-pl: 210px;
   width: $neptune-orb;
   margin-top: -$neptune-orb / 2;
   margin-left: -$neptune-orb / 2;
-  animation: orb revolution(59802) linear infinite;
+  animation: orb revolution(702) linear infinite;
   &:before {
     height: $neptune-pl;
     width: $neptune-pl;
@@ -466,7 +466,7 @@ $asteroids-belt-pl: 210px;
   width: $pluto-orb;
   margin-top: -$pluto-orb / 2 + -60;
   margin-left: -$pluto-orb / 2 + 70;
-  animation: orb revolution(90580) linear infinite;
+  animation: orb revolution(580) linear infinite;
   &:before {
     height: $pluto-pl;
     width: $pluto-pl;

@@ -40,7 +40,17 @@ function Vendors() {
                   style={{ position: "relative", objectFit: "cover" }}
                 />
               </div>
-              {/* <MapplicMap /> */}
+              {/* <mapplic-map
+                id="my-map"
+                data-json="https://mapplic.com/getMapData?id=6AAA3HVY6u05TYjJvG42"
+              >
+                <script
+                  type="text/javascript"
+                  id="mapplic-script"
+                  src="https://mapplic.com/mapplic.js"
+                ></script>
+              </mapplic-map> */}
+              <MapplicMap />
               <button className={styles.vendor_map_btn}> Vendor Map</button>
               <button className={styles.vendor_application}>
                 {" "}
