@@ -42,8 +42,11 @@
   padding: 1px;
   border: 1px solid #6c6c6c;
   border-radius: 10px;
-  overflow: hidden;
+  overflow-x: scroll;
+  overflow-y: hidden;
   margin: 75px 0;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
 
   @media (max-width: $breakpoint-md) {
     margin-top: 35px;
@@ -126,7 +129,6 @@
     justify-content: center;
   }
 }
-
 
 .button_container {
   display: flex;

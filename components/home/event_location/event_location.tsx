@@ -1,6 +1,5 @@
 import Image from "next/image";
 import styles from "./event_location.module.scss";
-import map from "../../../public/Figmap.png";
 import UpcomingEvents from "./upcoming_events";
 import FAQ from "../faq/faq";
 import bgFlower from "../../../public/bg-flower.png";
@@ -24,7 +23,7 @@ function EventLocation() {
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15706.668345329794!2d-77.32402160618663!3d38.63513037336696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b657c5359db809%3A0x863d2f3d6051facb!2sDale%20City%2C%20VA%2C%20USA!5e0!3m2!1sen!2snp!4v1725043097494!5m2!1sen!2snp"
               // width="1174"
-              height="475"
+              height="400"
               style={{
                 width: "100%",
                 border: "0",

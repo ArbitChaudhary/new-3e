@@ -22,7 +22,7 @@
   // flex-direction: column;
   // background-color: transparent;
   z-index: 0;
-  // overflow: hidden;
+  overflow: hidden;
 
   margin: 0 auto;
   @media (max-width: $breakpoint-md) {
@@ -71,8 +71,14 @@
   }
 }
 .ticket_list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  // display: grid;
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  // grid-template-columns: repeat(3, 1fr);
   // flex-direction: row;
   // flex-wrap: wrap;
   // justify-content: center;
@@ -81,11 +87,13 @@
   z-index: 60;
 
   @media (max-width: $breakpoint-md) {
-    grid-template-columns: repeat(2, 1fr);
+    // grid-template-columns: repeat(2, 1fr);
+    flex-wrap: wrap;
+
     margin-top: 35px;
     // justify-content: center;
     @media (max-width: $breakpoint-sm) {
-      grid-template-columns: 1fr;
+      // grid-template-columns: 1fr;
       margin-top: 35px;
     }
   }
@@ -252,7 +260,7 @@ $asteroids-belt-pl: 210px;
   position: relative;
   div {
     border-radius: 1000px;
-    top: 400px;
+    top: 350px;
     left: 50%;
     position: absolute;
     z-index: -10;

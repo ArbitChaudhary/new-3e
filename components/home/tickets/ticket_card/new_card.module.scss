@@ -1,0 +1,366 @@
+@import "styles/constants.scss";
+
+.new_card_container {
+  max-width: 250px;
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 2px 1px 8px 0 #00000050;
+  background-color: white;
+  background: url("../../../../public/bg-image.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card_header {
+  position: relative;
+  background: #eda71c;
+  overflow: hidden;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  text-align: center;
+}
+
+.header_content {
+  padding: 16px 0;
+}
+
+.card_body {
+  //   min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+.description {
+  font-family: Open Sans;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16.34px;
+  text-align: center;
+  color: $text-black;
+}
+.ticket_price {
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: center;
+}
+
+.button_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.button_container > button {
+  background-color: black;
+  color: white;
+  //   width: Fixed (119px) px;
+  //   height: Fixed (32.6px) px;
+  //   top: 129px;
+  //   left: 18px;
+  padding: 11px 28px 11px 28px;
+  //   gap: 5.04px;
+  border-radius: 5px;
+  width: fit-content;
+  border: none;
+  cursor: pointer;
+  //   opacity: 0px;
+}
+
+.card_header::before {
+  content: "";
+  height: 16px;
+  width: 16px;
+  position: absolute;
+  left: -8px;
+  bottom: -8px;
+  border-radius: 50%;
+  box-shadow: 2px 0 0 0 #00000080;
+  background-color: white;
+}
+
+.card_header::after {
+  content: "";
+  height: 16px;
+  width: 16px;
+  position: absolute;
+  right: -8px;
+  bottom: -8px;
+  border-radius: 50%;
+  //   box-shadow: -2px 0 0 0 #00000080;
+  background-color: white;
+}
+
+.circle1::before {
+  content: "";
+  height: 8px;
+  width: 8px;
+  position: absolute;
+  left: 4%;
+  bottom: -4px;
+  border-radius: 50%;
+  box-shadow: 2px 0 0 0 #00000080;
+  background-color: white;
+}
+.circle1::after {
+  content: "";
+  height: 8px;
+  width: 8px;
+  position: absolute;
+  left: 8%;
+  bottom: -4px;
+  border-radius: 50%;
+  box-shadow: 2px 0 0 0 #00000080;
+  background-color: white;
+}
+
+.circle2::before {
+  content: "";
+  height: 8px;
+  width: 8px;
+  position: absolute;
+  left: 12%;
+  bottom: -4px;
+  border-radius: 50%;
+  box-shadow: 2px 0 0 0 #00000080;
+  background-color: white;
+}
+.circle2::after {
+  content: "";
+  height: 8px;
+  width: 8px;
+  position: absolute;
+  left: 16%;
+  bottom: -4px;
+  border-radius: 50%;
+  box-shadow: 2px 0 0 0 #00000080;
+  background-color: white;
+}
+
+.circle3::before {
+  content: "";
+  height: 8px;
+  width: 8px;
+  position: absolute;
+  left: 20%;
+  bottom: -4px;
+  border-radius: 50%;
+  box-shadow: 2px 0 0 0 #00000080;
+  background-color: white;
+}
+.circle3::after {
+  content: "";
+  height: 8px;
+  width: 8px;
+  position: absolute;
+  left: 24%;
+  bottom: -4px;
+  border-radius: 50%;
+  box-shadow: 2px 0 0 0 #00000080;
+  background-color: white;
+}
+
+.circle4::before {
+  content: "";
+  height: 8px;
+  width: 8px;
+  position: absolute;
+  left: 28%;
+  bottom: -4px;
+  border-radius: 50%;
+  box-shadow: 2px 0 0 0 #00000080;
+  background-color: white;
+}
+.circle4::after {
+  content: "";
+  height: 8px;
+  width: 8px;
+  position: absolute;
+  left: 32%;
+  bottom: -4px;
+  border-radius: 50%;
+  box-shadow: 2px 0 0 0 #00000080;
+  background-color: white;
+}
+
+.circle5::before {
+  content: "";
+  height: 8px;
+  width: 8px;
+  position: absolute;
+  left: 36%;
+  bottom: -4px;
+  border-radius: 50%;
+  box-shadow: 2px 0 0 0 #00000080;
+  background-color: white;
+}
+.circle5::after {
+  content: "";
+  height: 8px;
+  width: 8px;
+  position: absolute;
+  left: 40%;
+  bottom: -4px;
+  border-radius: 50%;
+  box-shadow: 2px 0 0 0 #00000080;
+  background-color: white;
+}
+
+.circle6::before {
+  content: "";
+  height: 8px;
+  width: 8px;
+  position: absolute;
+  left: 44%;
+  bottom: -4px;
+  border-radius: 50%;
+  box-shadow: 2px 0 0 0 #00000080;
+  background-color: white;
+}
+.circle6::after {
+  content: "";
+  height: 8px;
+  width: 8px;
+  position: absolute;
+  left: 48%;
+  bottom: -4px;
+  border-radius: 50%;
+  box-shadow: 2px 0 0 0 #00000080;
+  background-color: white;
+}
+
+.circle7::before {
+  content: "";
+  height: 8px;
+  width: 8px;
+  position: absolute;
+  left: 52%;
+  bottom: -4px;
+  border-radius: 50%;
+  box-shadow: 2px 0 0 0 #00000080;
+  background-color: white;
+}
+.circle7::after {
+  content: "";
+  height: 8px;
+  width: 8px;
+  position: absolute;
+  left: 56%;
+  bottom: -4px;
+  border-radius: 50%;
+  box-shadow: 2px 0 0 0 #00000080;
+  background-color: white;
+}
+
+.circle8::before {
+  content: "";
+  height: 8px;
+  width: 8px;
+  position: absolute;
+  left: 60%;
+  bottom: -4px;
+  border-radius: 50%;
+  box-shadow: 2px 0 0 0 #00000080;
+  background-color: white;
+}
+.circle8::after {
+  content: "";
+  height: 8px;
+  width: 8px;
+  position: absolute;
+  left: 64%;
+  bottom: -4px;
+  border-radius: 50%;
+  box-shadow: 2px 0 0 0 #00000080;
+  background-color: white;
+}
+
+.circle9::before {
+  content: "";
+  height: 8px;
+  width: 8px;
+  position: absolute;
+  left: 68%;
+  bottom: -4px;
+  border-radius: 50%;
+  box-shadow: 2px 0 0 0 #00000080;
+  background-color: white;
+}
+.circle9::after {
+  content: "";
+  height: 8px;
+  width: 8px;
+  position: absolute;
+  left: 72%;
+  bottom: -4px;
+  border-radius: 50%;
+  box-shadow: 2px 0 0 0 #00000080;
+  background-color: white;
+}
+
+.circle10::before {
+  content: "";
+  height: 8px;
+  width: 8px;
+  position: absolute;
+  left: 76%;
+  bottom: -4px;
+  border-radius: 50%;
+  box-shadow: 2px 0 0 0 #00000080;
+  background-color: white;
+}
+.circle10::after {
+  content: "";
+  height: 8px;
+  width: 8px;
+  position: absolute;
+  left: 80%;
+  bottom: -4px;
+  border-radius: 50%;
+  box-shadow: 2px 0 0 0 #00000080;
+  background-color: white;
+}
+
+.circle11::before {
+  content: "";
+  height: 8px;
+  width: 8px;
+  position: absolute;
+  left: 84%;
+  bottom: -4px;
+  border-radius: 50%;
+  box-shadow: 2px 0 0 0 #00000080;
+  background-color: white;
+}
+.circle11::after {
+  content: "";
+  height: 8px;
+  width: 8px;
+  position: absolute;
+  left: 88%;
+  bottom: -4px;
+  border-radius: 50%;
+  box-shadow: 2px 0 0 0 #00000080;
+  background-color: white;
+}
+
+.circle12::before {
+  content: "";
+  height: 8px;
+  width: 8px;
+  position: absolute;
+  left: 92%;
+  bottom: -4px;
+  border-radius: 50%;
+  box-shadow: 2px 0 0 0 #00000080;
+  background-color: white;
+}
