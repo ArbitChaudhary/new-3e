@@ -1,7 +1,7 @@
 import VendorLogos from "./vendor_logos";
 import styles from "./footer.module.scss";
 import Image from "next/image";
-import logo from "../../public/footer-logo.png";
+import logo from "../../public/dtfest_logo.png";
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";

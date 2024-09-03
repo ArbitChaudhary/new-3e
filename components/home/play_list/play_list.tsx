@@ -1,10 +1,6 @@
 import Image from "next/image";
 import styles from "./play_list.module.scss";
-import logo from "../../../public/play3e.png";
-import playSetting from "../../../public/play-settings.png";
-import musicBanner from "../../../public/music.png";
-import spotify from "../../../public/music-logo.png";
-import moreIcon from "../../../public/more-icon.png";
+import logo from "../../../public/dtfest_logo.png";
 import MusicCard from "./music_card";
 
 function PlayList() {

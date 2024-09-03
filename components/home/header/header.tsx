@@ -1,5 +1,5 @@
 import styles from "./header.module.scss";
-import Logo from "../../../public/3E-Logo.png";
+import Logo from "../../../public/dtfest_logo.png";
 import Image from "next/image";
 import { IoIosArrowForward } from "react-icons/io";
 import { IoMdClose } from "react-icons/io";
@@ -41,8 +41,8 @@ function Header() {
             <Image
               src={Logo}
               alt=""
-              width={93}
-              height={83}
+              width={100}
+              height={60}
               // fill
               // layout="responsive"
               style={{ objectFit: "contain", position: "relative" }}
