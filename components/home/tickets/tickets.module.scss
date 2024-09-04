@@ -139,23 +139,23 @@ $year-in-second: 30; // 1 Earth year = 30 sec
 
 $sun: 40px;
 $mercury-orb: 70px;
-$mercury-pl: 4px;
+$mercury-pl: 10px;
 $venus-orb: 100px;
-$venus-pl: 8px;
+$venus-pl: 12px;
 $earth-orb: 145px;
-$earth-pl: 6px;
+$earth-pl: 10px;
 $mars-orb: 190px;
-$mars-pl: 6px;
+$mars-pl: 10px;
 $jupiter-orb: 340px;
-$jupiter-pl: 18px;
+$jupiter-pl: 22px;
 $saturn-orb: 440px;
-$saturn-pl: 12px;
+$saturn-pl: 18px;
 $uranus-orb: 520px;
-$uranus-pl: 10px;
+$uranus-pl: 14px;
 $neptune-orb: 630px;
-$neptune-pl: 10px;
+$neptune-pl: 16px;
 $pluto-orb: 780px;
-$pluto-pl: 3px;
+$pluto-pl: 6px;
 
 $asteroids-belt-orb: 300px;
 $asteroids-belt-pl: 210px;
@@ -260,7 +260,7 @@ $asteroids-belt-pl: 210px;
   position: relative;
   div {
     border-radius: 1000px;
-    top: 200px;
+    // top: 200px;
     left: 50%;
     position: absolute;
     z-index: -10;
