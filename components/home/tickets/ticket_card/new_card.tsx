@@ -36,7 +36,16 @@ function NewTicketCard({ price, count, offer, title, desc }: ITicketCardProps) {
         <div className={styles.ticket_price}>Price: ${price}</div>
       </div>
       <div className={styles.button_container}>
-        <button>Buy Now</button>
+        <button>
+          {" "}
+          <a
+            href="https://www.ticketfam.com/dt-fest-2024-659624038"
+            target="_blank"
+          >
+            {" "}
+            Buy Now{" "}
+          </a>
+        </button>
       </div>
     </div>
   );

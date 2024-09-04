@@ -289,10 +289,10 @@ $asteroids-belt-pl: 210px;
     #f9b700 39%,
     #e06317 100%
   );
-  // height: $sun;
-  // width: $sun;
-  // margin-top: -$sun / 2;
-  // margin-left: -$sun / 2;
+  height: $sun;
+  width: $sun;
+  margin-top: -$sun / 2;
+  margin-left: -$sun / 2;
   background-clip: padding-box;
   border: 0 !important;
   background-position: center;

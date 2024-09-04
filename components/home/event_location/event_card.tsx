@@ -15,8 +15,8 @@ function EventCard({ image, title }: IEventCard) {
           alt="Event Image"
           height={390}
           // width={279}
-          //  layout="responsive"
-          style={{ position: "relative", objectFit: "cover" }}
+          layout="responsive"
+          style={{ position: "relative", objectFit: "contain" }}
         />
         <div className={styles.event_name_box}>
           <div className={styles.event_name}>{title}</div>

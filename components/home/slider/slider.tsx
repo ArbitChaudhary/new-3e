@@ -8,7 +8,6 @@ const Sliders: React.FC = () => {
       <div className={styles.scrolling_text}>
         {" "}
         Prices Increase Soon! Prices Increase Soon! Prices Increase Soon! Prices
-        Increase Soon! Prices Increase Soon! Prices Increase Soon! Prices
         Increase Soon!
       </div>
     </div>

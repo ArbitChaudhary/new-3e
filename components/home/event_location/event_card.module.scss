@@ -3,6 +3,8 @@
 .card_container {
   width: 100%;
   min-width: 250px;
+  max-height: 390px;
+  height: 100%;
   height: fit-content;
   border-radius: 9px;
   overflow: hidden;
@@ -15,7 +17,7 @@
   // width: 100%;
   border-radius: 0 0 9px 9px;
   background: #06060640;
-  padding: 25px 82px 25px 17px;
+  padding: 25px 17px 25px 17px;
 
   @media (max-width: $breakpoint-md) {
     padding: 12px;
