@@ -1,0 +1,141 @@
+/* .navbar {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   background: #f5f5f5;
+   border-bottom: 1px solid #ddd;
+ }
+ 
+ .navbar-items {
+   display: flex;
+   overflow-x: auto;
+ }
+ 
+ .navbar-item {
+   padding: 10px 20px;
+   cursor: pointer;
+   white-space: nowrap;
+ }
+ 
+ .navbar-item.active {
+   font-weight: bold;
+ }
+ 
+ .underline {
+   position: absolute;
+   bottom: 0;
+   height: 2px;
+   background: #007bff;
+   transition: transform 0.3s ease;
+ }
+  */
+
+@import "styles/constants";
+
+.navbar {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: #f5f5f5;
+  border-bottom: 1px solid #ddd;
+  max-width: 300px;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.navbar_items {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+.navbar_item {
+  padding: 10px 20px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.navbar_item.active {
+  font-weight: bold;
+}
+
+.list_container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 22px;
+  padding: 1px;
+  border: 1px solid #6c6c6c;
+  border-radius: 10px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin: 75px 0;
+  scroll-behavior: smooth;
+  // scroll-snap-type: x mandatory;
+
+  @media (max-width: $breakpoint-md) {
+    margin-top: 35px;
+    margin-bottom: 35px;
+  }
+}
+
+.list_container {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.list_container::-webkit-scrollbar {
+  height: 2px;
+}
+
+.list_container::-webkit-scrollbar-thumb {
+  background-color: $button-color;
+  border-radius: 4px;
+}
+
+// .list_container::-webkit-scrollbar-thumb:hover {
+// }
+
+.list_container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.title {
+  color: $primary-color;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 65px;
+  text-align: center;
+  white-space: nowrap;
+  padding: 0 15px;
+  border-radius: 9px;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.selected_title {
+  color: $primary-color;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 65px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  padding: 0 15px;
+  border-radius: 9px;
+  height: 56px;
+}
+
+.selected_title,
+.title:hover {
+  cursor: pointer;
+  background-color: $button-color;
+}

@@ -1,0 +1,19 @@
+@import "styles/constants.scss";
+
+.content {
+  overflow: hidden;
+  position: relative;
+  /* height: 200px; Adjust as needed */
+}
+
+.content_wrapper {
+  display: flex;
+  transition: transform 0.3s ease;
+  will-change: transform;
+}
+
+.content_item {
+  min-width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+}

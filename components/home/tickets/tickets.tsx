@@ -1,3 +1,4 @@
+import { Parallax, ParallaxProvider } from "react-scroll-parallax";
 import NewTicketCard from "./ticket_card/new_card";
 import TicketCard from "./ticket_card/ticket_card";
 import styles from "./tickets.module.scss";
@@ -9,41 +10,59 @@ function Tickets() {
     <>
       <div className={styles.container} id="ticket">
         {/* end solar system */}
-        <div className={styles.solar_syst}>
-          <div className={styles.sun}></div>
-          <div className={styles.mercury}></div>
-          <div className={styles.venus}></div>
-          <div className={styles.earth}></div>
-          <div className={styles.mars}></div>
-          <div className={styles.jupiter}></div>
-          <div className={styles.saturn}></div>
-          <div className={styles.uranus}></div>
-          <div className={styles.neptune}></div>
-          <div className={styles.pluto}></div>
-          <div className={styles.asteroids_belt}></div>
-        </div>
-        <div className={styles.ticket_box}>
-          <div className={styles.box}>
-            <div className={styles.header}>Ticket Information</div>
-            <div className={styles.sub_head}>
-              Secure your tickets now, before prices go up!
+        <ParallaxProvider>
+          <Parallax
+            speed={-20}
+            // y={[-20, 20]} // Adjust these values to control the parallax effect
+            // tagOuter="div"
+          >
+            <div className={styles.solar_syst}>
+              <div className={styles.sun}></div>
+              <div className={styles.mercury}></div>
+              <div className={styles.venus}></div>
+              <div className={styles.earth}></div>
+              <div className={styles.mars}></div>
+              <div className={styles.jupiter}></div>
+              <div className={styles.saturn}></div>
+              <div className={styles.uranus}></div>
+              <div className={styles.neptune}></div>
+              <div className={styles.pluto}></div>
+              <div className={styles.asteroids_belt}></div>
             </div>
-            <div className={styles.countdown_text}>
-              Count down timer to event ( October 5th 10 am )
+          </Parallax>
+          <Parallax
+            speed={20}
+            // y={[20, -20]} // Adjust these values to control the parallax effect
+            // tagOuter="div"
+          >
+            <div className={styles.ticket_box}>
+              <div className={styles.box}>
+                <div className={styles.header}>Ticket Information</div>
+                <div className={styles.sub_head}>
+                  Secure your tickets now, before prices go up!
+                </div>
+                <div className={styles.countdown_text}>
+                  Count down timer to event ( October 5th 10 am )
+                </div>
+                <div className={styles.ticket_list}>
+                  {/* <TicketCard /> */}
+                  {/* <TicketCard offer="10% off" /> */}
+                  {/* <TicketCard raffle="3 raffle entries" offer="VIP" /> */}
+                  <NewTicketCard
+                    title="VIP PASS"
+                    price={50}
+                    desc="VIP Access for one person, includes all VIP Access and Perks "
+                  />
+                  <NewTicketCard
+                    title="General Admission"
+                    count="5"
+                    price={60}
+                  />
+                </div>
+              </div>
             </div>
-            <div className={styles.ticket_list}>
-              {/* <TicketCard /> */}
-              {/* <TicketCard offer="10% off" /> */}
-              {/* <TicketCard raffle="3 raffle entries" offer="VIP" /> */}
-              <NewTicketCard
-                title="VIP PASS"
-                price={50}
-                desc="VIP Access for one person, includes all VIP Access and Perks "
-              />
-              <NewTicketCard title="General Admission" count="5" price={60} />
-            </div>
-          </div>
-        </div>
+          </Parallax>
+        </ParallaxProvider>
       </div>
     </>
   );

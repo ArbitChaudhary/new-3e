@@ -30,7 +30,7 @@ function Vendors() {
                   src="https://mapplic.com/mapplic.js"
                 ></script>
               </mapplic.map> */}
-              <div className={styles.vendor_image}>
+              {/* <div className={styles.vendor_image}>
                 <Image
                   src={vendorImage}
                   alt="Vendor"
@@ -39,7 +39,7 @@ function Vendors() {
                   layout="responsive"
                   style={{ position: "relative", objectFit: "cover" }}
                 />
-              </div>
+              </div> */}
               {/* <mapplic-map
                 id="my-map"
                 data-json="https://mapplic.com/getMapData?id=6AAA3HVY6u05TYjJvG42"
