@@ -32,7 +32,7 @@
 .ticket_box {
   max-width: $breakpoint-xl;
   // width: 100%;
-  padding: 105px 130px;
+  padding: 0 130px 105px 130px;
   position: relative;
   margin: 0 auto;
   // height: 100%;
@@ -260,7 +260,7 @@ $asteroids-belt-pl: 210px;
   position: relative;
   div {
     border-radius: 1000px;
-    // top: 200px;
+    top: 300px;
     left: 50%;
     position: absolute;
     z-index: -10;

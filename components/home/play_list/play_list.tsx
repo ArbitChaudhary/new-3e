@@ -5,8 +5,8 @@ import MusicCard from "./music_card";
 
 function PlayList() {
   return (
-    <div className={styles.container}>
-      <div className={styles.play_list_container}>
+    <div>
+      <div>
         <div className={styles.top}>
           <div className={styles.top_left}>
             <div className={styles.logo}>
