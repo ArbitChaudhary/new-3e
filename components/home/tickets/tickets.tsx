@@ -40,9 +40,6 @@ function Tickets() {
               <PlayList />
               <div className={styles.box}>
                 <div className={styles.header}>Ticket Information</div>
-                <div className={styles.sub_head}>
-                  Secure your tickets now, before prices go up!
-                </div>
                 <div className={styles.ticket_list}>
                   {/* <TicketCard /> */}
                   {/* <TicketCard offer="10% off" /> */}
