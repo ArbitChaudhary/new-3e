@@ -6,7 +6,7 @@ import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
 import { CiLinkedin } from "react-icons/ci";
-import poweredBy from "../../public/powered_by.png";
+import poweredBy from "../../public/powered_by_svg.svg";
 
 function Footer() {
   return (
@@ -18,7 +18,7 @@ function Footer() {
             <div className={styles.footer_left}>
               <div className={styles.contact_us}>Contact Us</div>
               <div className={styles.email_title}>Email</div>
-              <div className={styles.email}>Info@Care4Cargo.Com</div>
+              <div className={styles.email}>Ashik@Ashik.io</div>
             </div>
             <div className={styles.footer_right}>
               <div className={styles.footer_logo}>
@@ -43,8 +43,9 @@ function Footer() {
                   <Image
                     src={poweredBy}
                     alt="Powered By"
-                    fill
-                    //   layout="responsive"
+                    height={50}
+                    width={150}
+                    layout="responsive"
                     style={{ objectFit: "contain" }}
                   />
                 </div>

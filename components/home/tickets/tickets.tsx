@@ -4,6 +4,7 @@ import TicketCard from "./ticket_card/ticket_card";
 import styles from "./tickets.module.scss";
 // import "@fortawesome/fontawesome-svg-core/styles.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
+import PlayList from "../play_list/play_list";
 
 function Tickets() {
   return (
@@ -36,11 +37,9 @@ function Tickets() {
             // tagOuter="div"
           >
             <div className={styles.ticket_box}>
+              <PlayList />
               <div className={styles.box}>
                 <div className={styles.header}>Ticket Information</div>
-                <div className={styles.sub_head}>
-                  Secure your tickets now, before prices go up!
-                </div>
                 <div className={styles.ticket_list}>
                   {/* <TicketCard /> */}
                   {/* <TicketCard offer="10% off" /> */}

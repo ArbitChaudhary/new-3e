@@ -23,7 +23,7 @@ const HomePage = () => {
       
       <ScrollableComponent />
       <ArtistsLineup />
-      <PlayList />
+      {/* <PlayList /> */}
       <Sliders />
       <Tickets />
       <Vendors />
