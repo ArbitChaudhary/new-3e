@@ -22,12 +22,12 @@ function Tickets() {
               <div className={styles.venus}></div>
               <div className={styles.earth}></div>
               <div className={styles.mars}></div>
+              <div className={styles.asteroids_belt}></div>
               <div className={styles.jupiter}></div>
               <div className={styles.saturn}></div>
               <div className={styles.uranus}></div>
               <div className={styles.neptune}></div>
               <div className={styles.pluto}></div>
-              <div className={styles.asteroids_belt}></div>
             </div>
           </Parallax>
           <Parallax
@@ -40,9 +40,6 @@ function Tickets() {
                 <div className={styles.header}>Ticket Information</div>
                 <div className={styles.sub_head}>
                   Secure your tickets now, before prices go up!
-                </div>
-                <div className={styles.countdown_text}>
-                  Count down timer to event ( October 5th 10 am )
                 </div>
                 <div className={styles.ticket_list}>
                   {/* <TicketCard /> */}

@@ -1,5 +1,4 @@
 import React, { useCallback, useEffect, useState } from "react";
-import Confetti from "react-confetti";
 import Image from "next/image";
 import styles from "./hero.module.scss";
 import kite1 from "../../../public/kite1.png";

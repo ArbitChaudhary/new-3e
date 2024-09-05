@@ -455,8 +455,8 @@ $asteroids-belt-pl: 210px;
   width: $asteroids-belt-orb;
   margin-top: -$asteroids-belt-orb / 2;
   margin-left: -$asteroids-belt-orb / 2;
-  animation: orb revolution(2191) linear infinite;
-  overflow: hidden;
+  animation: orb revolution(891) linear infinite;
+  // overflow: hidden;
   &:before {
     top: 50%;
     height: $asteroids-belt-pl;

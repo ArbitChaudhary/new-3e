@@ -265,11 +265,11 @@
 .cultural_pot {
   position: absolute;
   bottom: 0;
-  right: -45px;
+  right: 0;
   z-index: -1;
 
   @media (max-width: $breakpoint-md) {
-    right: -70px;
+    right: -60px;
   }
 }
 
