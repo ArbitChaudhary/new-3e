@@ -1,6 +1,7 @@
 @import "styles/constants.scss";
 
 .container {
+  max-width: $breakpoint-xl;
   width: 100%;
   margin: 0 auto;
   background: url("../../../public/Banner.png");
@@ -15,12 +16,12 @@
   max-width: $breakpoint-xl;
   margin: 0 auto;
   padding: 0 130px;
-  padding-bottom: 100px;
+  padding-bottom: 150px;
   position: relative;
 
   @media (max-width: $breakpoint-md) {
     padding: 0 35px;
-    padding-bottom: 35px;
+    padding-bottom: 150px;
   }
 }
 
