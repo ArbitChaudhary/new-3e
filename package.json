@@ -10,7 +10,10 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.6.0",
+    "@googlemaps/js-api-loader": "^1.16.8",
+    "@react-google-maps/api": "^2.19.3",
     "@react-spring/parallax": "^9.7.4",
+    "@types/google.maps": "^3.57.0",
     "@types/react-slick": "^0.23.13",
     "@types/slick-carousel": "^1.6.40",
     "framer-motion": "^11.3.31",
@@ -26,6 +29,7 @@
     "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
+    "@types/googlemaps": "^3.43.3",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",

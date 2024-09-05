@@ -1,0 +1,14 @@
+@import "styles/constants.scss";
+
+.map_container {
+  height: 500px;
+  width: 100%;
+
+  @media (max-width: $breakpoint-md) {
+    height: 400px;
+
+    @media (max-width: $breakpoint-sm) {
+      height: 300px;
+    }
+  }
+}

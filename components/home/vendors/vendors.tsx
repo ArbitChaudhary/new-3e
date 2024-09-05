@@ -9,10 +9,10 @@ function Vendors() {
   return (
     <>
       <div className={styles.container} id="vendor">
-        <div className={styles.bg_flower}>
-          <Image src={bgImage} alt="bg" fill />
-        </div>
         <div className={styles.vendor}>
+          {/* <div className={styles.bg_flower}>
+            <Image src={bgImage} alt="bg" fill />
+          </div> */}
           <div className={styles.head}>Support & Vendor</div>
           <div className={styles.vendor_grid}>
             <div className={styles.left}>
