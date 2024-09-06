@@ -46,13 +46,23 @@ function MusicCard() {
           </div>
         </div>
       </div> */}
-      <iframe
+      {/* <iframe
         style={{ borderRadius: "12px" }}
         src="https://open.spotify.com/embed/playlist/78dDwp05ZJrTHcV8TRmRg6?utm_source=generator"
         width="100%"
         height="352"
         frameBorder="0"
         //  allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy"
+      ></iframe> */}
+      <iframe
+        style={{ borderRadius: "12px" }}
+        src="https://open.spotify.com/embed/playlist/1xYFjVMJZjBI7GAYo0mVb8?utm_source=generator"
+        width="100%"
+        height="352"
+        frameBorder="0"
+        // allowfullscreen=""
         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
         loading="lazy"
       ></iframe>

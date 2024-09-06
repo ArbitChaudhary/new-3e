@@ -13,17 +13,7 @@ function Celebration() {
       <div className={styles.container} id="festivals">
         <div className={styles.celebration}>
           <div className={styles.celebration_flex}>
-            {/* <div className={styles.celebration_image}>
-              <Image
-                src={celbration}
-                alt={"image"}
-                height={812}
-                width={375}
-                // fill
-                layout="responsive"
-                style={{ objectFit: "cover" }}
-              />
-            </div> */}
+            
             <div
               style={{
                 display: "flex",

@@ -86,6 +86,10 @@
   font-weight: 500;
   text-align: center;
   color: $primary-color;
+
+  &:hover {
+    cursor: pointer;
+  }
   @media (max-width: $breakpoint-md) {
     font-size: 20px;
     padding: 17px 25px;
@@ -105,6 +109,10 @@
   font-weight: 500;
   text-align: center;
   color: $primary-color;
+
+  &:hover {
+    cursor: pointer;
+  }
   @media (max-width: $breakpoint-md) {
     display: inline-block;
     font-size: 20px;
@@ -123,6 +131,10 @@
   font-size: 32px;
   font-weight: 500;
   text-align: center;
+
+  &:hover {
+    cursor: pointer;
+  }
   //   color: $primary-color;
   @media (max-width: $breakpoint-md) {
     font-size: 20px;
@@ -162,6 +174,9 @@
   font-weight: 500;
   text-align: center;
   border: none;
+  &:hover {
+    cursor: pointer;
+  }
 
   @media (max-width: $breakpoint-md) {
     font-size: 20px;
@@ -183,6 +198,10 @@
   font-weight: 500;
   text-align: center;
   border: 2px solid black;
+
+  &:hover {
+    cursor: pointer;
+  }
 
   @media (max-width: $breakpoint-md) {
     display: none;
@@ -206,6 +225,10 @@
   text-align: center;
   border: 2px solid $button-color;
 
+  &:hover {
+    cursor: pointer;
+  }
+
   @media (max-width: $breakpoint-md) {
     font-size: 20px;
     max-width: 273px;
@@ -228,6 +251,10 @@
   font-weight: 500;
   text-align: center;
   border: 2px solid black;
+
+  &:hover {
+    cursor: pointer;
+  }
 
   @media (max-width: $breakpoint-md) {
     display: block;
@@ -253,6 +280,10 @@
   border: none;
   border-bottom: 2px solid black;
   border-radius: 0;
+
+  &:hover {
+    cursor: pointer;
+  }
 
   @media (max-width: $breakpoint-md) {
     display: inline-block;
@@ -283,5 +314,39 @@
 
   @media (max-width: $breakpoint-md) {
     display: none;
+  }
+}
+
+.form_content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+
+  @media (max-width: $breakpoint-md) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.form_textarea {
+  margin-top: 20px;
+}
+
+.button_container {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  margin-top: 40px;
+}
+
+.button_container > button {
+  border-radius: 4px;
+  padding: 15px 40px;
+  color: $primary-color;
+  background: rgb(175 42 49);
+  border: none;
+  max-width: 200px;
+  width: 100%;
+
+  &:hover {
+    cursor: pointer;
   }
 }

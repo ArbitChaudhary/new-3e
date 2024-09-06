@@ -66,10 +66,6 @@ class Animation extends Component {
     };
     return (
       <div className={styles.container_ani}>
-        {/* <div className={styles.sponsors}> */}
-        {/* <div className={styles.title}>Title Sponsor: NEST Reality</div> */}
-        {/* <div className={styles.sponsors_list}> */}
-        {/* <h2>Auto Play</h2>{" "} */}
         <Slider {...settings}>
           {" "}
           <div className={styles.celebration_image}>
@@ -128,10 +124,7 @@ class Animation extends Component {
               style={{ objectFit: "cover", position: "relative" }}
             />
           </div>
-        </Slider>{" "}
-        {/* </div> */}
-        {/* </div> */}
-        {/* </div> */}
+        </Slider>
       </div>
     );
   }
