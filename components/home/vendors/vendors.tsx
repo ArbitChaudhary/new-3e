@@ -99,10 +99,18 @@ function Vendors() {
               >
                 Performer Application
               </button>
-              <button className={styles.volunteer}>
+              <button
+                className={styles.volunteer}
+                onClick={() => setOpenForm(true)}
+              >
                 Volunteer Application
               </button>
-              <button className={styles.vendor_app}>Vendor Application</button>
+              <button
+                className={styles.vendor_app}
+                onClick={() => setOpenForm(true)}
+              >
+                Vendor Application
+              </button>
               <button className={styles.volunteer_support}>
                 Volunteer Support
               </button>
@@ -166,7 +174,7 @@ function Vendors() {
                   type="number"
                 />
                 <CustomInput
-                  label="Preferre method of contact"
+                  label="Preferred method of contact"
                   name="contact_method"
                   control={control}
                   errors={errors}
