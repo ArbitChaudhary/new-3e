@@ -52,15 +52,12 @@
 
 .nav_logo {
   position: relative;
-  animation: float 4s ease;
+  animation: logo-animate 2s ease;
 }
 
-@keyframes float {
+@keyframes logo-animate {
   0% {
     transform: translateY(-50px);
-  }
-  50% {
-    transform: translateY(-20px);
   }
   100% {
     transform: translateY(0) rotate(0deg);

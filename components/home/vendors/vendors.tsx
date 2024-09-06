@@ -33,15 +33,28 @@ function Vendors() {
           <div className={styles.head}>Support & Vendor</div>
           <div className={styles.vendor_grid}>
             <div className={styles.left}>
-              <MapplicMap />
-              <mapplic-map data-json="https://mapplic.com/getMapData?id=nTwVMk7kyY3G2F4thoER">
+              <div
+                className={styles.mapplic_container}
+                style={{ position: "relative" }}
+              >
+                <MapplicMap />
+              </div>
+              {/* <mapplic-map data-json="https://mapplic.com/getMapData?id=nmUT5fBcrZJTHltRzd0U">
                 <script
                   type="text/javascript"
                   id="mapplic-script"
                   src="https://mapplic.com/mapplic.js"
+                  style={{ width: "400px", height: "300px" }}
                 ></script>
-              </mapplic-map>
-              <button className={styles.vendor_map_btn}> Vendor Map</button>
+              </mapplic-map> */}
+              {/* <div style={{ position: "relative" }}> */}
+              <button
+                className={styles.vendor_map_btn}
+                style={{ position: "relative" }}
+              >
+                {" "}
+                Vendor Map
+              </button>
               <button
                 className={styles.vendor_application}
                 onClick={() => setOpenForm(true)}
@@ -52,6 +65,7 @@ function Vendors() {
               <button className={styles.view_vendor_btn}>
                 Veiw All Vendors{" "}
               </button>
+              {/* </div> */}
             </div>
             <div className={styles.right}>
               <div className={styles.description}>
