@@ -76,7 +76,10 @@ function Vendors() {
                 ></script>
               </mapplic-map> */}
               <button className={styles.vendor_map_btn}> Vendor Map</button>
-              <button className={styles.vendor_application}>
+              <button
+                className={styles.vendor_application}
+                onClick={() => setOpenForm(true)}
+              >
                 {" "}
                 Vendor Application
               </button>
