@@ -9,6 +9,10 @@ import React, { Component } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import PlatinumSponsors from "./platinum_sponsor/platinum_sponsors";
+import GoldSponsors from "./gold_sponsor/gold_sponsor";
+import SilverSponsors from "./silver_sponsor/silver_sponsor";
+import Supporters from "./supporters/supporters";
 // import "./App.css";
 
 class Sponsors extends Component {
@@ -66,8 +70,11 @@ class Sponsors extends Component {
         <div className={styles.sponsors}>
           <div className={styles.title}>Title Sponsor: NEST Reality</div>
           <div className={styles.sponsors_list}>
+            <PlatinumSponsors />
+            <GoldSponsors />
+            <SilverSponsors />
             {/* <h2>Auto Play</h2>{" "} */}
-            <Slider {...settings}>
+            {/* <Slider {...settings}>
               {" "}
               <div className={styles.vendor_logo}>
                 <Image
@@ -117,7 +124,10 @@ class Sponsors extends Component {
                   style={{ objectFit: "contain", position: "relative" }}
                 />
               </div>{" "}
-            </Slider>{" "}
+            </Slider>{" "} */}
+          </div>
+          <div className={styles.supporters_list}>
+            <Supporters />
           </div>
         </div>
         {/* </div> */}

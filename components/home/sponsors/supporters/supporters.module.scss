@@ -1,0 +1,35 @@
+@import "styles/constants.scss";
+
+.platinum_sponsors {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+
+  @media (max-width: $breakpoint-md) {
+    gap: 22px;
+  }
+}
+
+.title {
+  font-family: Poppins;
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  color: $button-color;
+
+  @media (max-width: $breakpoint-md) {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+  }
+}
+
+.sponsor_logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}

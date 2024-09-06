@@ -32,20 +32,24 @@
   color: $primary-color;
 
   @media (max-width: $breakpoint-md) {
-    font-size: 24px;
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 .sponsors_list {
-  // display: flex;
-  // flex-direction: row;
-  // align-items: center;
-  // justify-content: center;
-  // gap: 50px;
   margin-top: 50px;
-  // flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 50px;
 
   @media (max-width: $breakpoint-md) {
     margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
   }
 }
 
@@ -53,4 +57,11 @@
   height: 120px;
   height: 81px;
   position: relative;
+}
+
+.supporters_list {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
