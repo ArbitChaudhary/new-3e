@@ -18,7 +18,7 @@
   white-space: nowrap;
   display: inline-block; /* Make text a block-level element for animation */
   padding-left: 100%; /* Start the text off-screen on the right */
-  animation: scroll-left 20s linear infinite;
+  animation: scroll-left 10s linear infinite;
 
   @media (max-width: $breakpoint-md) {
     margin: 0 35px;

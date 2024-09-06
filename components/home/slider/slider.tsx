@@ -5,11 +5,7 @@ import styles from "./slider.module.scss";
 const Sliders: React.FC = () => {
   return (
     <div className={styles.container}>
-      <div className={styles.scrolling_text}>
-        {" "}
-        Prices Increase Soon! Prices Increase Soon! Prices Increase Soon! Prices
-        Increase Soon!
-      </div>
+      <div className={styles.scrolling_text}> Prices Increase Soon!</div>
     </div>
   );
 };

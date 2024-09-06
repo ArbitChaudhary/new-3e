@@ -33,48 +33,14 @@ function Vendors() {
           <div className={styles.head}>Support & Vendor</div>
           <div className={styles.vendor_grid}>
             <div className={styles.left}>
-              {/* <mapplic-map data-json="https://mapplic.com/getMapData?id=enYM9UEjC107fMcdVuI8">
-                <script
-                  type="text/javascript"
-                  id="mapplic-script"
-                  src="https://mapplic.com/mapplic.js"
-                ></script>
-              </mapplic-map> */}
-              {/* <mapplic.map data-json="https://mapplic.com/getMapData?id=FAuMxQrcODG1iqqSk0Eh">
-                <script
-                  type="text/javascript"
-                  id="mapplic-script"
-                  src="https://mapplic.com/mapplic.js"
-                ></script>
-              </mapplic.map> */}
-              {/* <div className={styles.vendor_image}>
-                <Image
-                  src={vendorImage}
-                  alt="Vendor"
-                  height={564}
-                  width={580}
-                  layout="responsive"
-                  style={{ position: "relative", objectFit: "cover" }}
-                />
-              </div> */}
-              {/* <mapplic-map
-                id="my-map"
-                data-json="https://mapplic.com/getMapData?id=6AAA3HVY6u05TYjJvG42"
-              >
-                <script
-                  type="text/javascript"
-                  id="mapplic-script"
-                  src="https://mapplic.com/mapplic.js"
-                ></script>
-              </mapplic-map> */}
               <MapplicMap />
-              {/* <mapplic-map data-json="https://mapplic.com/getMapData?id=nmUT5fBcrZJTHltRzd0U">
+              <mapplic-map data-json="https://mapplic.com/getMapData?id=nTwVMk7kyY3G2F4thoER">
                 <script
                   type="text/javascript"
                   id="mapplic-script"
                   src="https://mapplic.com/mapplic.js"
                 ></script>
-              </mapplic-map> */}
+              </mapplic-map>
               <button className={styles.vendor_map_btn}> Vendor Map</button>
               <button
                 className={styles.vendor_application}

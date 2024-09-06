@@ -46,7 +46,7 @@ function EventLocation() {
             <button>Get Directions</button>
           </div>
         </div>
-        <UpcomingEvents />
+        {/* <UpcomingEvents /> */}
         <FAQ />
       </div>
     </div>

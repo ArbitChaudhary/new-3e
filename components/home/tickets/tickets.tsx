@@ -54,6 +54,11 @@ function Tickets() {
                     count="5"
                     price={60}
                   />
+                  <NewTicketCard
+                    title="General Admission"
+                    count="1"
+                    price={15}
+                  />
                 </div>
               </div>
             </div>
