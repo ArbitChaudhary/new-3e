@@ -3,7 +3,10 @@ import styles from "./event_location.module.scss";
 import UpcomingEvents from "./upcoming_events";
 import FAQ from "../faq/faq";
 import bgFlower from "../../../public/bg-flower.png";
-import Map from "./map";
+// import Map from "./leaflet_map/leaflet_map";
+import dynamic from "next/dynamic";
+
+const Map = dynamic(() => import("./leaflet_map/leaflet_map"), { ssr: false });
 
 function EventLocation() {
   const center = { lat: 38.63513, lng: -77.324022 };
@@ -36,6 +39,7 @@ function EventLocation() {
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe> */}
+            {/* <Map /> */}
             <Map />
           </div>
           <div className={styles.button_flex}>

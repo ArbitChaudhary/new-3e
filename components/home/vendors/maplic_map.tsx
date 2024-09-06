@@ -29,7 +29,7 @@ const MapplicMap = () => {
   }, []);
 
   return (
-    <mapplic-map data-json="https://mapplic.com/getMapData?id=FAuMxQrcODG1iqqSk0Eh"></mapplic-map>
+    <mapplic-map data-json="https://mapplic.com/getMapData?id=nmUT5fBcrZJTHltRzd0U"></mapplic-map>
   );
 };
 
