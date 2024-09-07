@@ -34,3 +34,7 @@ const MapplicMap = () => {
 };
 
 export default MapplicMap;
+
+{
+  /* <mapplic-map data-json="https://mapplic.com/getMapData?id=nmUT5fBcrZJTHltRzd0U"><script type="text/javascript" id="mapplic-script" src="https://mapplic.com/mapplic.js"></script></mapplic-map> */
+}

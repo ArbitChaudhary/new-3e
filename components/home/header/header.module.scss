@@ -16,8 +16,7 @@
   margin: 0 auto;
   padding: 0 130px;
   padding-top: 23px;
-  // padding: 23px 0;
-  height: 93px;
+  // height: 93px;
   display: flex;
   align-items: center;
   background: transparent;
@@ -52,7 +51,7 @@
 
 .nav_logo {
   position: relative;
-  animation: logo-animate 2s ease;
+  // animation: logo-animate 2s ease;
 }
 
 @keyframes logo-animate {

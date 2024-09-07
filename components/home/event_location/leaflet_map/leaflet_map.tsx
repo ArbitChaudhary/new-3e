@@ -5,7 +5,7 @@ import "leaflet/dist/leaflet.css";
 import "leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css";
 import "leaflet-defaulticon-compatibility";
 
-const position: LatLngExpression = [51.505, -0.09];
+const position: LatLngExpression = [38.75066, -77.475143];
 function LeafletMap() {
   return (
     <MapContainer
