@@ -16,16 +16,18 @@ declare global {
 const MapplicMap = () => {
   useEffect(() => {
     // Dynamically load the Mapplic script
-    const script = document.createElement("script");
-    script.src = "https://mapplic.com/mapplic.js";
-    script.id = "mapplic-script";
-    script.async = true;
-    document.body.appendChild(script);
+    if (!customElements.get("mapplic-map")) {
+      const script = document.createElement("script");
+      script.src = "https://mapplic.com/mapplic.js";
+      script.id = "mapplic-script";
+      script.async = true;
+      document.body.appendChild(script);
 
-    // Cleanup script on unmount
-    return () => {
-      document.getElementById("mapplic-script")?.remove();
-    };
+      // Cleanup script on unmount
+      return () => {
+        document.getElementById("mapplic-script")?.remove();
+      };
+    }
   }, []);
 
   return (
@@ -34,7 +36,3 @@ const MapplicMap = () => {
 };
 
 export default MapplicMap;
-
-{
-  /* <mapplic-map data-json="https://mapplic.com/getMapData?id=nmUT5fBcrZJTHltRzd0U"><script type="text/javascript" id="mapplic-script" src="https://mapplic.com/mapplic.js"></script></mapplic-map> */
-}

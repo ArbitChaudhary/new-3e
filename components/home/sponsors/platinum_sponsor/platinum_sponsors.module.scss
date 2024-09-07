@@ -4,7 +4,8 @@
   display: flex;
   flex-direction: column;
   gap: 50px;
-  align-items: center;
+  align-items: flex-start;
+  text-align: center;
   @media (max-width: $breakpoint-md) {
     gap: 22px;
   }
