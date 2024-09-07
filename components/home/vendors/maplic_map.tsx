@@ -16,12 +16,11 @@ declare global {
 const MapplicMap = () => {
   useEffect(() => {
     // Dynamically load the Mapplic script
-    if (!customElements.get("mapplic-map")) {
-      const script = document.createElement("script");
-      script.src = "https://mapplic.com/mapplic.js";
-      script.id = "mapplic-script";
-      script.async = true;
-      document.body.appendChild(script);
+    const script = document.createElement("script");
+    script.src = "https://mapplic.com/mapplic.js";
+    script.id = "mapplic-script";
+    script.async = true;
+    document.body.appendChild(script);
 
       // Cleanup script on unmount
       return () => {

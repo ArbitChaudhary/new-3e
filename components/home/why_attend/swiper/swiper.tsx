@@ -13,12 +13,6 @@ function ContentSlider({ title, content }: SliderProps) {
   const titleListRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if (sliderRef1.current) {
-      sliderRef1.current.slickGoTo(activeIndex);
-    }
-  }, [activeIndex]);
-
-  useEffect(() => {
     if (titleListRef.current) {
       const titleList = titleListRef.current;
       const titleElement = titleList.children[activeIndex] as HTMLDivElement;
@@ -41,6 +35,9 @@ function ContentSlider({ title, content }: SliderProps) {
 
   const handleClick = (index: number) => {
     setActiveIndex(index);
+    if (sliderRef1.current) {
+      sliderRef1.current.slickGoTo(index);
+    }
   };
 
   const handleAfterChange = (index: number) => {

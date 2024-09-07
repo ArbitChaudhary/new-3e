@@ -60,9 +60,9 @@ function Vendors() {
                 {" "}
                 Vendor Application
               </button>
-              <button className={styles.view_vendor_btn}>
+              {/* <button className={styles.view_vendor_btn}>
                 Veiw All Vendors{" "}
-              </button>
+              </button> */}
               {/* </div> */}
             </div>
             <div className={styles.right}>
@@ -92,10 +92,13 @@ function Vendors() {
               >
                 Vendor Application
               </button>
-              <button className={styles.volunteer_support}>
+              <button
+                className={styles.volunteer_support}
+                onClick={() => setOpenForm(true)}
+              >
                 Volunteer Support
               </button>
-              <button className={styles.vendor_view}>View All Vendors</button>
+              {/* <button className={styles.vendor_view}>View All Vendors</button> */}
             </div>
           </div>
           <div className={styles.cultural_pot}>

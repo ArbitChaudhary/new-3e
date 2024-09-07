@@ -12,7 +12,7 @@ function Footer() {
   return (
     <>
       <div className={styles.container}>
-        <VendorLogos />
+        {/* <VendorLogos /> */}
         <div className={styles.footer}>
           <div className={styles.footer_grid}>
             <div className={styles.footer_left}>
