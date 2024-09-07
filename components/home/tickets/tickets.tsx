@@ -55,8 +55,8 @@ function Tickets() {
                     price={60}
                   />
                   <NewTicketCard
-                    title="General Admission"
-                    count="1"
+                    title="1 Raffle Ticket"
+                    // count="1"
                     price={15}
                   />
                 </div>
