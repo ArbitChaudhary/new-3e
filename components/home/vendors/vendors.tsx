@@ -130,7 +130,7 @@ function Vendors() {
               <Typography
                 sx={{ fontWeight: 600, fontSize: { xs: "20px", md: "30px" } }}
               >
-                Performer Application
+                {/* Performer Application */}
               </Typography>
               <IconButton onClick={() => setOpenForm(false)}>
                 <CloseIcon />
