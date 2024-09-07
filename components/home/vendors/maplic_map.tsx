@@ -22,11 +22,10 @@ const MapplicMap = () => {
     script.async = true;
     document.body.appendChild(script);
 
-      // Cleanup script on unmount
-      return () => {
-        document.getElementById("mapplic-script")?.remove();
-      };
-    }
+    // Cleanup script on unmount
+    return () => {
+      document.getElementById("mapplic-script")?.remove();
+    };
   }, []);
 
   return (
