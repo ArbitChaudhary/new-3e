@@ -49,7 +49,11 @@ export default function Document() {
           content="https://main.d83nwks9nu6cc.amplifyapp.com/"
         />
 
-        <link rel="icon" href="/favicon.ico" type="../public/dtfest_logo.png" />
+        <link
+          rel="icon"
+          href="/dtfest_logo.png"
+          type="../public/dtfest_logo.png"
+        />
         <link rel="apple-touch-icon" href="../public/dtfest_logo.png" />
       </Head>
       <body>
