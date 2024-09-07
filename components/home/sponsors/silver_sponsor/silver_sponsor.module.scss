@@ -5,6 +5,11 @@
   flex-direction: column;
   gap: 50px;
   align-items: center;
+  justify-content: center;
+
+  @media (max-width: $breakpoint-md) {
+    gap: 22px;
+  }
 }
 
 .title {
@@ -23,8 +28,9 @@
 }
 
 .sponsor_logos {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   gap: 20px;
 }

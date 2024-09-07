@@ -70,9 +70,13 @@ class Sponsors extends Component {
         <div className={styles.sponsors}>
           <div className={styles.title}>Title Sponsor: NEST Reality</div>
           <div className={styles.sponsors_list}>
-            <PlatinumSponsors />
-            <GoldSponsors />
-            <SilverSponsors />
+            <div className={styles.first}>
+              <PlatinumSponsors />
+            </div>
+            <div className={styles.second}>
+              <GoldSponsors />
+              <SilverSponsors />
+            </div>
             {/* <h2>Auto Play</h2>{" "} */}
             {/* <Slider {...settings}>
               {" "}
@@ -125,9 +129,6 @@ class Sponsors extends Component {
                 />
               </div>{" "}
             </Slider>{" "} */}
-          </div>
-          <div className={styles.supporters_list}>
-            <Supporters />
           </div>
         </div>
         {/* </div> */}

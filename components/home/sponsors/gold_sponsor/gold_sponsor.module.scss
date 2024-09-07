@@ -26,9 +26,10 @@
 }
 
 .sponsor_logos {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   gap: 10px;
   @media (max-width: $breakpoint-md) {
     display: flex;

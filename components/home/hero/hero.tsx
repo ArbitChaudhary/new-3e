@@ -5,6 +5,7 @@ import kite1 from "../../../public/kite1.png";
 import kite2 from "../../../public/kite2.png";
 import kite3 from "../../../public/kite3.png";
 import ticketCard from "../../../public/ticket-logo.png";
+import dtfest from "../../../public/dtfest_logo.png";
 
 const Hero = () => {
   return (
@@ -39,6 +40,16 @@ const Hero = () => {
                   height={79}
                   width={48}
                   style={{ objectFit: "contain", position: "relative" }}
+                />
+              </div>
+            </div>
+            <div className={styles.logo_section}>
+              <div className={styles.hero_logo}>
+                <Image
+                  src={dtfest}
+                  alt="Logo"
+                  fill
+                  style={{ objectFit: "contain" }}
                 />
               </div>
             </div>

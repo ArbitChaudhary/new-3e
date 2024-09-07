@@ -79,13 +79,13 @@
   font-weight: 600;
   line-height: 60px;
   text-align: center;
-  margin-top: 100px;
+  margin-top: 150px;
   color: $primary-color;
 
   @media (max-width: $breakpoint-md) {
     font-size: 24px;
     line-height: 36px;
-    margin-top: 70px;
+    margin-top: 100px;
   }
 }
 
@@ -154,8 +154,8 @@
 
 .kite_container {
   position: relative;
-  width: 200px; /* Adjust based on your kite image size */
-  height: 200px; /* Adjust based on your kite image size */
+  width: 200px;
+  height: 200px;
 }
 
 .kite_image {
@@ -164,4 +164,37 @@
   left: 50%;
   transform: translateX(-50%);
   animation: float 4s ease-in-out infinite;
+}
+
+.logo_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -100px;
+}
+
+.hero_logo {
+  position: absolute;
+  // right: 50%;
+  // top: 30%;
+  // transform: translate(-30%, -50%);
+  height: 150px;
+  width: 250px;
+  animation: logo-animation 2s ease;
+
+  @media (max-width: $breakpoint-md) {
+    width: 200px;
+    height: 120px;
+  }
+}
+
+@keyframes logo-animation {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
