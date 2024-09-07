@@ -50,7 +50,7 @@ function FAQ() {
           <div className={styles.header}>FAQs</div>
           <div className={styles.faq_list}>
             {faqs?.map((item, index) => (
-              <div className={styles.question_reply}>
+              <div key={index} className={styles.question_reply}>
                 <div
                   key={index}
                   className={styles.question_flex}
