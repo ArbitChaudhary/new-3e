@@ -9,8 +9,10 @@ import dynamic from "next/dynamic";
 const Map = dynamic(() => import("./leaflet_map/leaflet_map"), { ssr: false });
 
 function EventLocation() {
-  const center = { lat: 38.63513, lng: -77.324022 };
-  const markerPosition = { lat: 38.63513, lng: -77.324022 };
+  const handleDirection = () => {
+    const url = `https://maps.app.goo.gl/SF2oHBZL79L9v2qB7`;
+    window.open(url, "_blank");
+  };
   return (
     <div>
       <div className={styles.container} id="event_location">
@@ -43,7 +45,7 @@ function EventLocation() {
             <Map />
           </div>
           <div className={styles.button_flex}>
-            <button>Get Directions</button>
+            <button onClick={handleDirection}>Get Directions</button>
           </div>
         </div>
         {/* <UpcomingEvents /> */}

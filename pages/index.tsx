@@ -13,7 +13,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 const Home: NextPageWithLayout = () => {
   return (
-    <PageWrapper title="Home">
+    <PageWrapper title="DTFest 2024">
       <HomeLayout>
         {/* <main className={`${styles.main} ${inter.className}`}>Home page</main> */}
         <HomePage />

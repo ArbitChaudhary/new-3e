@@ -45,7 +45,7 @@ function GoldSponsors() {
               src={sponsor2}
               alt="Sponsor Logo"
               height={80}
-              width={90}
+              width={120}
               // layout="responsive"
               style={{ position: "relative", objectFit: "contain" }}
             />
@@ -66,7 +66,7 @@ function GoldSponsors() {
               src={sponsor6}
               alt="Sponsor Logo"
               height={80}
-              width={60}
+              width={100}
               // layout="responsive"
               style={{ position: "relative", objectFit: "contain" }}
             />

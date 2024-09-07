@@ -37,9 +37,15 @@ function Vendors() {
                 className={styles.mapplic_container}
                 style={{ position: "relative" }}
               >
-                <MapplicMap />
+                <mapplic-map data-json="https://mapplic.com/getMapData?id=nmUT5fBcrZJTHltRzd0U">
+                  <script
+                    type="text/javascript"
+                    id="mapplic-script"
+                    src="https://mapplic.com/mapplic.js"
+                  ></script>
+                </mapplic-map>
+                {/* <MapplicMap /> */}
               </div>
-
               <button
                 className={styles.vendor_map_btn}
                 style={{ position: "relative" }}
@@ -54,9 +60,9 @@ function Vendors() {
                 {" "}
                 Vendor Application
               </button>
-              <button className={styles.view_vendor_btn}>
+              {/* <button className={styles.view_vendor_btn}>
                 Veiw All Vendors{" "}
-              </button>
+              </button> */}
               {/* </div> */}
             </div>
             <div className={styles.right}>
@@ -86,10 +92,13 @@ function Vendors() {
               >
                 Vendor Application
               </button>
-              <button className={styles.volunteer_support}>
+              <button
+                className={styles.volunteer_support}
+                onClick={() => setOpenForm(true)}
+              >
                 Volunteer Support
               </button>
-              <button className={styles.vendor_view}>View All Vendors</button>
+              {/* <button className={styles.vendor_view}>View All Vendors</button> */}
             </div>
           </div>
           <div className={styles.cultural_pot}>
@@ -121,7 +130,7 @@ function Vendors() {
               <Typography
                 sx={{ fontWeight: 600, fontSize: { xs: "20px", md: "30px" } }}
               >
-                Performer Application
+                {/* Performer Application */}
               </Typography>
               <IconButton onClick={() => setOpenForm(false)}>
                 <CloseIcon />

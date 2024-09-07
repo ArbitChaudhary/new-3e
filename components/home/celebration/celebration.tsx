@@ -13,7 +13,6 @@ function Celebration() {
       <div className={styles.container} id="festivals">
         <div className={styles.celebration}>
           <div className={styles.celebration_flex}>
-            
             <div
               style={{
                 display: "flex",
@@ -27,20 +26,10 @@ function Celebration() {
               <span>Welcome to DT Fest 2024</span>
               <div>A Celebration Of Nepali Culture!</div>
               <p className="">
-                DT Fest 2024 is the premier annual celebration of Nepali
-                culture, brought to life by 3E Entertainment, a leader in
-                organizing significant events for the Nepalese community in the
-                DMV area. This year&apos;s festival promises to be a vibrant
-                showcase of Nepal&apos;s rich heritage, featuring an eclectic
-                mix of vendors, skilled artisans, talented musicians, and
-                dynamic dancers. Attendees will be immersed in the beauty of
-                Nepalese culture through traditional dances, enchanting
-                instrumental performances, and an array of authentic Nepalese
-                products, artwork, and culinary delights. With the festival
-                coinciding with the festive spirit of Dashain and Tihar, our
-                youthful and dynamic team has been meticulously assembled to
-                curate an unforgettable experience, ensuring that DT Fest 2024
-                is an event to remember for all who attend.
+                DT Fest 2024 is a vibrant celebration of Nepali culture,
+                featuring a mix of vendors, artisans, musicians, and dancers.
+                Attendees can enjoy traditional dances, live performances, and
+                authentic Nepalese products, art, and cuisine.
               </p>
             </div>
             <div className={styles.bg_flower}>
