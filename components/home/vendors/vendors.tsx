@@ -1,9 +1,6 @@
 import Image from "next/image";
 import styles from "./vendors.module.scss";
-import vendorImage from "../../../public/vendor-banner.png";
 import pot from "../../../public/ClayJar .png";
-import bgImage from "../../../public/bg-flower.png";
-import MapplicMap from "./maplic_map";
 import {
   Dialog,
   DialogContent,
@@ -12,17 +9,12 @@ import {
   Typography,
 } from "@mui/material";
 import { useState } from "react";
-import CustomInput from "@/common/ui/custom_input/custom_input";
-import { useForm } from "react-hook-form";
 import CloseIcon from "@mui/icons-material/Close";
-import CustomTextArea from "@/common/ui/text_area/custom_text_area";
+import Form from "./form";
 
 function Vendors() {
   const [openForm, setOpenForm] = useState<boolean>(false);
-  const {
-    control,
-    formState: { errors },
-  } = useForm();
+
   return (
     <>
       <div className={styles.container} id="vendor">
@@ -137,51 +129,7 @@ function Vendors() {
               </IconButton>
             </DialogTitle>
             <DialogContent>
-              <div className={styles.form_content}>
-                <CustomInput
-                  label="Name"
-                  name="name"
-                  control={control}
-                  errors={errors}
-                />
-                <CustomInput
-                  label="Email"
-                  name="email"
-                  control={control}
-                  errors={errors}
-                />
-                <CustomInput
-                  label="Phone Number"
-                  name="phone_number"
-                  control={control}
-                  errors={errors}
-                  type="number"
-                />
-                <CustomInput
-                  label="Preferred method of contact"
-                  name="contact_method"
-                  control={control}
-                  errors={errors}
-                />
-
-                <CustomInput
-                  label="Website/URL"
-                  name="name"
-                  control={control}
-                  errors={errors}
-                />
-              </div>
-              <div className={styles.form_textarea}>
-                <CustomTextArea
-                  label="Descriptioin"
-                  name="description"
-                  control={control}
-                  errors={errors}
-                />
-              </div>
-              <div className={styles.button_container}>
-                <button>Continue</button>
-              </div>
+              <Form />
             </DialogContent>
           </Dialog>
           {/* end form pop up */}

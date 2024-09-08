@@ -9,6 +9,10 @@ import { CiLinkedin } from "react-icons/ci";
 import poweredBy from "../../public/powered_by_svg.svg";
 
 function Footer() {
+  const handleClick = () => {
+    const url = `https://www.instagram.com/dtfest2024/`;
+    window.open(url, "_blank");
+  };
   return (
     <>
       <div className={styles.container}>
@@ -32,10 +36,13 @@ function Footer() {
                 />
               </div>
               <div className={styles.social_media}>
-                <FaFacebookF />
-                <FaInstagram />
-                <BsTwitterX />
-                <CiLinkedin />
+                {/* <FaFacebookF /> */}
+                <FaInstagram
+                  onClick={handleClick}
+                  style={{ cursor: "pointer" }}
+                />
+                {/* <BsTwitterX /> */}
+                {/* <CiLinkedin /> */}
               </div>
               <div className={styles.powered_by_box}>
                 <div className={styles.powered_by}>Powered By</div>
@@ -46,7 +53,15 @@ function Footer() {
                     height={50}
                     width={150}
                     layout="responsive"
-                    style={{ objectFit: "contain" }}
+                    style={{
+                      objectFit: "contain",
+                      cursor: "pointer",
+                      marginLeft: "5px",
+                    }}
+                    onClick={() => {
+                      const url = `http://ashik.io/`;
+                      window.open(url, "_blank");
+                    }}
                   />
                 </div>
               </div>

@@ -54,8 +54,9 @@ function Tickets() {
                     count="5"
                     price={60}
                   />
+                  <NewTicketCard title="General Admission" price={15} />
                   <NewTicketCard
-                    title="1 Raffle Ticket"
+                    title="1 Raffle Ticket Entry"
                     // count="1"
                     price={15}
                   />
