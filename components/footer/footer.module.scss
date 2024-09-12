@@ -108,7 +108,8 @@
 .powered_by_box {
   position: relative;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   margin-top: 53px;
 

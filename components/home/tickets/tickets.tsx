@@ -1,6 +1,5 @@
 import { Parallax, ParallaxProvider } from "react-scroll-parallax";
 import NewTicketCard from "./ticket_card/new_card";
-import TicketCard from "./ticket_card/ticket_card";
 import styles from "./tickets.module.scss";
 // import "@fortawesome/fontawesome-svg-core/styles.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
@@ -44,17 +43,18 @@ function Tickets() {
                   {/* <TicketCard /> */}
                   {/* <TicketCard offer="10% off" /> */}
                   {/* <TicketCard raffle="3 raffle entries" offer="VIP" /> */}
-                  <NewTicketCard
-                    title="VIP PASS"
-                    price={50}
-                    desc="VIP Access for one person, includes all VIP Access and Perks "
-                  />
+                  <NewTicketCard title="General Admission" price={15} />
                   <NewTicketCard
                     title="General Admission"
                     count="5"
                     price={60}
                   />
-                  <NewTicketCard title="General Admission" price={15} />
+                  <NewTicketCard
+                    title="VIP Pass"
+                    price={50}
+                    desc="VIP Access for one person, includes all VIP Access and Perks "
+                  />
+
                   <NewTicketCard
                     title="1 Raffle Ticket Entry"
                     // count="1"

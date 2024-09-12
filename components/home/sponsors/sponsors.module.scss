@@ -38,19 +38,9 @@
 }
 .sponsors_list {
   margin-top: 50px;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  align-items: flex-start;
-  gap: 10px;
-
-  @media (max-width: $breakpoint-md) {
-    margin-top: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .second {
@@ -85,4 +75,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.sponsor_logo {
+  width: 200px;
+  height: 200px;
+  position: relative;
+
+  @media (max-width: $breakpoint-md) {
+    width: 150px;
+    height: 150px;
+  }
 }

@@ -8,8 +8,9 @@ function Form() {
     control,
     formState: { errors },
   } = useForm();
+
   return (
-    <>
+    <form>
       <div className={styles.form_content}>
         <CustomInput
           label="Name"
@@ -39,7 +40,7 @@ function Form() {
 
         <CustomInput
           label="Website/URL"
-          name="name"
+          name="url"
           control={control}
           errors={errors}
         />
@@ -53,9 +54,11 @@ function Form() {
         />
       </div>
       <div className={styles.button_container}>
-        <button>Continue</button>
+        <button type="submit" style={{ position: "relative" }}>
+          Continue
+        </button>
       </div>
-    </>
+    </form>
   );
 }
 

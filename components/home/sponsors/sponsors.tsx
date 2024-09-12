@@ -1,140 +1,38 @@
 import styles from "./sponsors.module.scss";
-import vendor1 from "../../../public/sponsor-1.png";
-import vendor2 from "../../../public/sponsor-2.png";
-import vendor4 from "../../../public/sponsor-4.png";
-import vendor5 from "../../../public/sponsor-5.png";
 import Image from "next/image";
-
-import React, { Component } from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import PlatinumSponsors from "./platinum_sponsor/platinum_sponsors";
-import GoldSponsors from "./gold_sponsor/gold_sponsor";
-import SilverSponsors from "./silver_sponsor/silver_sponsor";
-import Supporters from "./supporters/supporters";
+import sponsorLogo from "../../../public/nest_logo.jpeg";
+import React from "react";
+// import PlatinumSponsors from "./platinum_sponsor/platinum_sponsors";
+// import GoldSponsors from "./gold_sponsor/gold_sponsor";
+// import SilverSponsors from "./silver_sponsor/silver_sponsor";
+// import Supporters from "./supporters/supporters";
 // import "./App.css";
 
-class Sponsors extends Component {
-  render() {
-    const settings = {
-      dots: false,
-      arrows: false,
-      infinite: true,
-      slidesToShow: 7,
-      slidesToScroll: 1,
-      autoplay: true,
-      speed: 5000,
-      autoplaySpeed: 5000,
-      cssEase: "linear",
-      responsive: [
-        {
-          breakpoint: 1200,
-          settings: {
-            slidesToShow: 5,
-            slidesToScroll: 1,
-          },
-        },
-        {
-          breakpoint: 992,
-          settings: {
-            slidesToShow: 6,
-            slidesToScroll: 1,
-          },
-        },
-        {
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 5,
-            slidesToScroll: 1,
-          },
-        },
-        {
-          breakpoint: 576,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 1,
-          },
-        },
-        {
-          breakpoint: 400,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 1,
-          },
-        },
-      ],
-    };
-    return (
-      <div className={styles.container}>
-        <div className={styles.sponsors}>
-          <div className={styles.title}>Title Sponsor: NEST Reality</div>
-          <div className={styles.sponsors_list}>
-            <div className={styles.first}>
-              <PlatinumSponsors />
-            </div>
-            <div className={styles.second}>
-              <GoldSponsors />
-              <SilverSponsors />
-            </div>
-            {/* <h2>Auto Play</h2>{" "} */}
-            {/* <Slider {...settings}>
-              {" "}
-              <div className={styles.vendor_logo}>
-                <Image
-                  src={vendor1}
-                  alt="Vendor Logo"
-                  height={70}
-                  style={{ objectFit: "contain", position: "relative" }}
-                />
-              </div>
-              <div className={styles.vendor_logo}>
-                <Image
-                  src={vendor2}
-                  alt="Vendor Logo"
-                  height={70}
-                  style={{ objectFit: "contain", position: "relative" }}
-                />
-              </div>
-              <div className={styles.vendor_logo}>
-                <Image
-                  src={vendor2}
-                  alt="Vendor Logo"
-                  height={70}
-                  style={{ objectFit: "contain", position: "relative" }}
-                />
-              </div>
-              <div className={styles.vendor_logo}>
-                <Image
-                  src={vendor4}
-                  alt="Vendor Logo"
-                  height={70}
-                  style={{ objectFit: "contain", position: "relative" }}
-                />
-              </div>
-              <div className={styles.vendor_logo}>
-                <Image
-                  src={vendor5}
-                  alt="Vendor Logo"
-                  height={70}
-                  style={{ objectFit: "contain", position: "relative" }}
-                />
-              </div>
-              <div className={styles.vendor_logo}>
-                <Image
-                  src={vendor1}
-                  alt="Vendor Logo"
-                  height={70}
-                  style={{ objectFit: "contain", position: "relative" }}
-                />
-              </div>{" "}
-            </Slider>{" "} */}
+function Sponsors() {
+  return (
+    <div className={styles.container}>
+      <div className={styles.sponsors}>
+        <div className={styles.title}>Title Sponsor: NEST Reality</div>
+        <div className={styles.sponsors_list}>
+          <div className={styles.sponsor_logo}>
+            <Image
+              src={sponsorLogo}
+              alt="NEST"
+              fill
+              style={{ objectFit: "contain" }}
+            />
           </div>
+          {/* <div className={styles.first}>
+            <PlatinumSponsors />
+          </div>
+          <div className={styles.second}>
+            <GoldSponsors />
+            <SilverSponsors />
+          </div> */}
         </div>
-        {/* </div> */}
       </div>
-    );
-  }
+    </div>
+  );
 }
 
 export default Sponsors;
