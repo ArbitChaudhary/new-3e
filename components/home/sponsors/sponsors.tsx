@@ -15,16 +15,25 @@ function Sponsors() {
   return (
     <div className={styles.container}>
       <div className={styles.sponsors}>
-        <div className={styles.title}>Title Sponsor: NEST Reality</div>
-        <div className={styles.sponsors_list}>
-          {/* <div className={styles.sponsor_logo}>
+        <div className={styles.title}>Title Sponsor</div>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            marginTop: "20px",
+          }}
+        >
+          <div className={styles.sponsor_logo}>
             <Image
               src={sponsorLogo}
               alt="NEST"
               fill
               style={{ objectFit: "contain" }}
             />
-          </div> */}
+          </div>
+        </div>
+        <div className={styles.sponsors_list}>
           <div className={styles.first}>
             <PlatinumSponsors />
           </div>

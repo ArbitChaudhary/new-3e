@@ -45,8 +45,8 @@ function ArtistsLineup() {
             <ArtistsCard
               image={artist3}
               name="Groovemandu Inc"
-              from="5:30"
-              to="6:00"
+              from="6:00"
+              to="6:30"
               ampm="PM"
               url="https://www.facebook.com/profile.php?id=61550598749232"
             />
