@@ -1,6 +1,6 @@
 import styles from "./sponsors.module.scss";
 import Image from "next/image";
-import sponsorLogo from "../../../public/nest_logo.jpeg";
+import sponsorLogo from "../../../public/onest.png";
 import React from "react";
 import PlatinumSponsors from "./platinum_sponsor/platinum_sponsors";
 import GoldSponsors from "./gold_sponsor/gold_sponsor";
