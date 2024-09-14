@@ -40,7 +40,9 @@
   margin-top: 50px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  // align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
 }
 
 .second {
@@ -52,9 +54,7 @@
   margin-left: -50px;
 
   @media (max-width: $breakpoint-md) {
-    // justify-content: last baseline;
     flex-direction: row;
-    align-items: last baseline;
     margin-left: 0;
 
     @media (max-width: "500px") {

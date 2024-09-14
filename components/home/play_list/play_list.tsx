@@ -14,7 +14,7 @@ function PlayList() {
                 src={logo}
                 alt="Logo"
                 width={102}
-                height={102}
+                height={80}
                 layout="responsive"
                 style={{ objectFit: "contain", position: "relative" }}
               />

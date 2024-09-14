@@ -12,8 +12,9 @@ function SilverSponsors() {
         <div
           style={{
             display: "flex",
-            flexDirection: "row",
+            flexDirection: "column",
             alignItems: "center",
+            justifyContent: "center",
             gap: "10px",
           }}
         >
@@ -38,7 +39,7 @@ function SilverSponsors() {
             />
           </div>
         </div>
-        <div className={styles.sponsor_logo}>
+        {/* <div className={styles.sponsor_logo}>
           <Image
             src={sponsor1}
             alt="Sponsor Logo"
@@ -47,7 +48,7 @@ function SilverSponsors() {
             // layout="responsive"
             style={{ position: "relative", objectFit: "contain" }}
           />
-        </div>
+        </div> */}
       </div>
     </div>
   );
