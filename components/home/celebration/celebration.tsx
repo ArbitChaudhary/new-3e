@@ -1,12 +1,7 @@
 import styles from "./celebration.module.scss";
-import celbration from "../../../public/culturelDance.png";
 import Image from "next/image";
 import bgFlower from "../../../public/bg-flower.png";
-import Animation from "./slider";
-// import ImageSwapper from "./swipper";
-// import image1 from "../../../public/3E-Logo.png";
-// import image2 from "../../../public/Banner.png";
-
+import celebration from "../../../public/celebration.png";
 function Celebration() {
   return (
     <main>
@@ -20,7 +15,15 @@ function Celebration() {
                 width: "100%",
               }}
             >
-              <Animation />
+              <div className={styles.celebration_image}>
+                <Image
+                  src={celebration}
+                  alt="Celebration Image"
+                  fill
+                  style={{ objectFit: "cover" }}
+                />
+              </div>
+              {/* <Animation /> */}
             </div>
             <div className={styles.celebration_content}>
               <span>Welcome to DT Fest 2024</span>

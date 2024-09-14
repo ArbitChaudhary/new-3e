@@ -1,5 +1,5 @@
 import styles from "./kumari_exhibition.module.scss";
-import kumari from "../../../../public/Kumari.png";
+import kumari from "../../../../public/kumari.png";
 import Image from "next/image";
 
 function KumariExhibition() {

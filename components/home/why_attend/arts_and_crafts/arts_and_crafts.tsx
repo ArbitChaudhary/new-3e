@@ -1,5 +1,5 @@
 import styles from "./arts_and_crafts.module.scss";
-import arts from "../../../../public/arts.png";
+import arts from "../../../../public/nepali-arts-craft.png";
 import Image from "next/image";
 
 function ArtsAndCrafts() {

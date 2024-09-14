@@ -1,13 +1,18 @@
 import Image, { StaticImageData } from "next/image";
 import styles from "./artists_card.module.scss";
-import artist from "../../../public/artists-1.png";
-import play from "../../../public/video-play.png";
+import play from "../../../public/play.png";
 
 interface IArtistsCard {
   image: StaticImageData;
+  link?: string;
+  name?: string;
+  from?: string;
+  to?: string;
+  ampm?: string;
+  url?: string;
 }
 
-function ArtistsCard({ image }: IArtistsCard) {
+function ArtistsCard({ image, link, name, from, to, ampm, url }: IArtistsCard) {
   return (
     <>
       <div className={styles.artists_container}>
@@ -24,19 +29,23 @@ function ArtistsCard({ image }: IArtistsCard) {
           <div className={styles.text_box_container}>
             <div className={styles.text_box}>
               <div className={styles.detail_content}>
-                <div className={styles.time}>12:00</div>
-                <div className={styles.artist_name}>{""}</div>
+                <div className={styles.time}>
+                  {from}-{to} {ampm}
+                </div>
+                <div className={styles.artist_name}>{name}</div>
               </div>
-              <Image
-                src={play}
-                alt="play"
-                height={30}
-                width={30}
-                layout="respponsive"
-              />
+              <a href={url} target="_blank">
+                <Image
+                  src={play}
+                  alt="play"
+                  height={24}
+                  width={24}
+                  layout="respponsive"
+                />
+              </a>
             </div>
           </div>
-          <div className={styles.title}>Lorem Ipsum</div>
+          {/* <div className={styles.title}>{name}</div> */}
         </div>
       </div>
     </>

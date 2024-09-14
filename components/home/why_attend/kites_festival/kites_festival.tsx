@@ -1,5 +1,5 @@
 import styles from "./kites_festival.module.scss";
-import kiteFest from "../../../../public/kites_fest.png";
+import kiteFest from "../../../../public/kite-festival.png";
 import Image from "next/image";
 
 function KitesFestival() {

@@ -1,5 +1,5 @@
 import styles from "./cuisine.module.scss";
-import cuisine from "../../../../public/cuisine.png";
+import cuisine from "../../../../public/nepalese_cuisine.png";
 import Image from "next/image";
 
 function Cuisine() {

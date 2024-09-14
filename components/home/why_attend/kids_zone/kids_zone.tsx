@@ -1,5 +1,5 @@
 import styles from "./kids_zone.module.scss";
-import kids from "../../../../public/kids.png";
+import kids from "../../../../public/Kid-activites.png";
 import Image from "next/image";
 
 function KidsZone() {
