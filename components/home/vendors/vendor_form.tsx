@@ -3,7 +3,7 @@ import CustomTextArea from "@/common/ui/text_area/custom_text_area";
 import styles from "./vendors.module.scss";
 import { useForm } from "react-hook-form";
 
-function Form() {
+function VendorForm() {
   const {
     control,
     formState: { errors },
@@ -62,4 +62,4 @@ function Form() {
   );
 }
 
-export default Form;
+export default VendorForm;

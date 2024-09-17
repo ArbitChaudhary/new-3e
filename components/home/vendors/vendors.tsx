@@ -5,15 +5,20 @@ import {
   Dialog,
   DialogContent,
   DialogTitle,
+  Divider,
   IconButton,
   Typography,
 } from "@mui/material";
 import { useState } from "react";
 import CloseIcon from "@mui/icons-material/Close";
-import Form from "./form";
+import VolunteerForm from "./volunteer_form";
+import VendorForm from "./vendor_form";
+import PerformerForm from "./perform_form";
 
 function Vendors() {
-  const [openForm, setOpenForm] = useState<boolean>(false);
+  const [openPerformerApp, setOpenPerformerApp] = useState<boolean>(false);
+  const [openVendorForm, setOpenVendorForm] = useState<boolean>(false);
+  const [openVolunteerForm, setOpenVolunteerForm] = useState<boolean>(false);
 
   return (
     <>
@@ -47,7 +52,7 @@ function Vendors() {
               </button>
               <button
                 className={styles.vendor_application}
-                onClick={() => setOpenForm(true)}
+                onClick={() => setOpenVendorForm(true)}
               >
                 {" "}
                 Vendor Application
@@ -68,25 +73,25 @@ function Vendors() {
               </div>
               <button
                 className={styles.performers}
-                onClick={() => setOpenForm(true)}
+                onClick={() => setOpenPerformerApp(true)}
               >
                 Performer Application
               </button>
               <button
                 className={styles.volunteer}
-                onClick={() => setOpenForm(true)}
+                onClick={() => setOpenVolunteerForm(true)}
               >
                 Volunteer Application
               </button>
               <button
                 className={styles.vendor_app}
-                onClick={() => setOpenForm(true)}
+                onClick={() => setOpenVendorForm(true)}
               >
                 Vendor Application
               </button>
               <button
                 className={styles.volunteer_support}
-                onClick={() => setOpenForm(true)}
+                onClick={() => setOpenVolunteerForm(true)}
               >
                 Volunteer Support
               </button>
@@ -105,8 +110,8 @@ function Vendors() {
           </div>
           {/* start form pop up */}
           <Dialog
-            open={openForm}
-            onClose={() => setOpenForm(false)}
+            open={openPerformerApp}
+            onClose={() => setOpenPerformerApp(false)}
             maxWidth="md"
             fullWidth
           >
@@ -120,19 +125,82 @@ function Vendors() {
               }}
             >
               <Typography
-                sx={{ fontWeight: 600, fontSize: { xs: "20px", md: "30px" } }}
+                sx={{ fontWeight: 600, fontSize: { xs: "18px", md: "20px" } }}
               >
-                {/* Performer Application */}
+                Performer Application
               </Typography>
-              <IconButton onClick={() => setOpenForm(false)}>
+              <IconButton onClick={() => setOpenPerformerApp(false)}>
                 <CloseIcon />
               </IconButton>
             </DialogTitle>
+            <Divider />
             <DialogContent>
-              <Form />
+              <PerformerForm />
             </DialogContent>
           </Dialog>
           {/* end form pop up */}
+          {/* vendor application form start */}
+          <Dialog
+            open={openVendorForm}
+            onClose={() => setOpenVendorForm(false)}
+            maxWidth="md"
+            fullWidth
+          >
+            <DialogTitle
+              sx={{
+                display: "flex",
+                flexDirection: "row",
+                gap: "20px",
+                justifyContent: "space-between",
+                alignItems: "center",
+              }}
+            >
+              <Typography
+                sx={{ fontWeight: 600, fontSize: { xs: "18px", md: "20px" } }}
+              >
+                Vendor Application
+              </Typography>
+              <IconButton onClick={() => setOpenVendorForm(false)}>
+                <CloseIcon />
+              </IconButton>
+            </DialogTitle>
+            <Divider />
+            <DialogContent>
+              <VendorForm />
+            </DialogContent>
+          </Dialog>
+          {/* vendor application form end */}
+
+          {/* volunteer application */}
+          <Dialog
+            open={openVolunteerForm}
+            onClose={() => setOpenVolunteerForm(false)}
+            maxWidth="md"
+            fullWidth
+          >
+            <DialogTitle
+              sx={{
+                display: "flex",
+                flexDirection: "row",
+                gap: "20px",
+                justifyContent: "space-between",
+                alignItems: "center",
+              }}
+            >
+              <Typography
+                sx={{ fontWeight: 600, fontSize: { xs: "18px", md: "20px" } }}
+              >
+                Volunteer Application
+              </Typography>
+              <IconButton onClick={() => setOpenVolunteerForm(false)}>
+                <CloseIcon />
+              </IconButton>
+            </DialogTitle>
+            <Divider />
+            <DialogContent>
+              <VolunteerForm />
+            </DialogContent>
+          </Dialog>
         </div>
       </div>
     </>
