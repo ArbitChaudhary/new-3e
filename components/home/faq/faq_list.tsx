@@ -32,7 +32,7 @@ export const faqs: IFAQs[] = [
   {
     question: "Can I become a vendor or sponsor for the event?",
     reply:
-      'Yes! We welcome vendors and sponsors. Please visit the "Vendors & Sponsors" section on our website for more details on how to participate or contact us directly at [contact info].',
+      'Yes! We welcome vendors and sponsors. Please visit the "Vendors & Sponsors" section on our website for more details on how to participate or contact us directly at 3ETAINMENT@gmail.com.',
   },
   {
     question: "Is there parking available at the venue?",
