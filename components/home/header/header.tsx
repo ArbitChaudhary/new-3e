@@ -17,7 +17,7 @@ const headerMenu: IHeaderMenu[] = [
     path: "#festivals",
   },
   {
-    title: "Tickents",
+    title: "Tickets",
     path: "#ticket",
   },
   {
