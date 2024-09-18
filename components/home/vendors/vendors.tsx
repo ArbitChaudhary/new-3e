@@ -44,13 +44,6 @@ function Vendors() {
                 {/* <MapplicMap /> */}
               </div>
               <button
-                className={styles.vendor_map_btn}
-                style={{ position: "relative" }}
-              >
-                {" "}
-                Vendor Map
-              </button>
-              <button
                 className={styles.vendor_application}
                 onClick={() => setOpenVendorForm(true)}
               >
