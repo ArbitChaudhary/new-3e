@@ -4,7 +4,6 @@ import styles from "./artists_lineup.module.scss";
 import bgImage from "../../../public/bg-flower.png";
 import artist1 from "../../../public/nima-rumba.jpg";
 import artist2 from "../../../public/pramod-kharel.jpg";
-import artist3 from "../../../public/artist4.png";
 import artist4 from "../../../public/artist5.png";
 import artist5 from "../../../public/astist7.png";
 import artist6 from "../../../public/Milan.webp";
@@ -41,14 +40,6 @@ function ArtistsLineup() {
               to="6:00"
               ampm="PM"
               url="https://www.facebook.com/reel/845682800460113"
-            />
-            <ArtistsCard
-              image={artist3}
-              name="Groovemandu Inc"
-              from="6:00"
-              to="6:30"
-              ampm="PM"
-              url="https://www.facebook.com/profile.php?id=61550598749232"
             />
             <ArtistsCard
               image={artist6}
