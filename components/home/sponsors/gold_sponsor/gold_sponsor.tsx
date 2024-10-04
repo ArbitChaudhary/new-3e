@@ -2,11 +2,14 @@ import Image from "next/image";
 import styles from "./gold_sponsor.module.scss";
 import sponsor1 from "../../../../public/sponsor-3.png";
 import sponsor2 from "../../../../public/sponsor-4.png";
-import sponsor3 from "../../../../public/sponsor-5.png";
+import sponsor3 from "../../../../public/Gold/Reliance.png";
 import sponsor4 from "../../../../public/sponsor-6.png";
 import sponsor5 from "../../../../public/sponsor-12.png";
 import sponsor6 from "../../../../public/sponsor-13.png";
 import sponsor7 from "../../../../public/sponsor-15.png";
+import sponsor8 from "../../../../public/Gold/Simple Mortgage.jpeg";
+import sponsor9 from "../../../../public/Gold/SOMI REDDY.webp";
+import sponsor10 from "../../../../public/Gold/ORIGINAL LOGO SLG .png";
 
 function GoldSponsors() {
   return (
@@ -84,6 +87,36 @@ function GoldSponsors() {
         </div>
         <div className={styles.sponsor_logo}>
           <Image
+            src={sponsor9}
+            alt="Sponsor Logo"
+            height={80}
+            width={90}
+            // layout="responsive"
+            style={{ position: "relative", objectFit: "contain" }}
+          />
+        </div>
+        <div className={styles.sponsor_logo}>
+          <Image
+            src={sponsor7}
+            alt="Sponsor Logo"
+            height={80}
+            width={90}
+            // layout="responsive"
+            style={{ position: "relative", objectFit: "contain" }}
+          />
+        </div>
+        <div className={styles.sponsor_logo}>
+          <Image
+            src={sponsor8}
+            alt="Sponsor Logo"
+            height={80}
+            width={90}
+            // layout="responsive"
+            style={{ position: "relative", objectFit: "contain" }}
+          />
+        </div>
+        <div className={styles.sponsor_logo}>
+          <Image
             src={sponsor3}
             alt="Sponsor Logo"
             height={80}
@@ -92,10 +125,9 @@ function GoldSponsors() {
             style={{ position: "relative", objectFit: "contain" }}
           />
         </div>
-
         <div className={styles.sponsor_logo}>
           <Image
-            src={sponsor7}
+            src={sponsor10}
             alt="Sponsor Logo"
             height={80}
             width={90}

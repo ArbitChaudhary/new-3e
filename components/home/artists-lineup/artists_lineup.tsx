@@ -2,11 +2,11 @@ import Image from "next/image";
 import ArtistsCard from "./artist_card";
 import styles from "./artists_lineup.module.scss";
 import bgImage from "../../../public/bg-flower.png";
-import artist1 from "../../../public/nima-rumba.jpg";
-import artist2 from "../../../public/pramod-kharel.jpg";
-import artist4 from "../../../public/artist5.png";
-import artist5 from "../../../public/astist7.png";
-import artist6 from "../../../public/Milan.webp";
+import artist1 from "../../../public/artists/nima-rumba.jpg";
+import artist2 from "../../../public/artists/pramod-kharel.jpg";
+import artist4 from "../../../public/artists/AztraBand.png";
+import artist5 from "../../../public/artists/Samrat & Band.png";
+import artist6 from "../../../public/artists/Milan.webp";
 
 function ArtistsLineup() {
   return (

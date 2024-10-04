@@ -6,7 +6,7 @@
   flex-direction: column;
   gap: 50px;
   align-items: center;
-  justify-content: center;
+  // justify-content: center;
 
   @media (max-width: $breakpoint-md) {
     gap: 22px;
