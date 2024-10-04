@@ -51,7 +51,7 @@ function Tickets() {
                   />
                   <NewTicketCard
                     title="VIP Pass"
-                    price={50}
+                    price={100}
                     desc="VIP Access for one person, includes all VIP Access and Perks "
                   />
 
